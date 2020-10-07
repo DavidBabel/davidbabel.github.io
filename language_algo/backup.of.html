@@ -1,0 +1,42 @@
+<script>const isDemo = false;</script>
+<div id="container">
+  <div id="algo_box">
+    Algorithme :
+    <span id="debug_box">(
+      <label>
+        <input type="checkbox" id="codebox_visibility"> voir le code</label>)
+      <button id="download">télécharger</button>
+      <button id="reindent">Réindenter</button>
+    </span>
+    <textarea id="algo">
+
+
+
+
+</textarea>
+  </div>
+  <div id="exec_box">
+    Execution :
+    <span id="prompt_box">(
+      <label>
+        <input type="checkbox" id="prompt_visibility" checked> voir le prompt</label>) </span>
+    <div id="terminal-content">
+      <span id="prompt">
+        <span class="console" style="display: inline;">
+          &gt; mon_programme
+        </span>
+        <input class="console" id="args" type="text" placeholder="paramètres..." spellcheck="false">
+      </span>
+
+      <div id="terminal">
+
+      </div>
+    </div>
+  </div>
+  <div id="codebox">
+    Code généré:
+    <textarea id="code" rows="10" readonly></textarea>
+  </div>
+</div>
+<div id="note_container">note:
+  <span id="note">0</span>/20</div>

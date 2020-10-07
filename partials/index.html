@@ -1,0 +1,22 @@
+{{{include 'partials/top.html' '{"align": "center"}'}}}
+
+<div>
+  <a href="{{domain}}/index.html">
+  <img src="{{domain}}/img/supdeweb-logo.jpg" alt="Sup de Web"
+    style="width: 350px; margin: 50px 0 50px 0;" class="img-rounded">
+  </a>
+<!--    &nbsp;&nbsp;&nbsp;
+  <a href="{{domain}}/index.html">
+  <img src="{{domain}}/img/ecs-logo.png" alt="ECS"
+    style="width: 350px; margin: 50px 0 50px 0;" class="img-rounded">
+  </a> -->
+</div>
+<h2 class="main-title">{{title}}</h2>
+<br>
+<div>
+  {{#each list}}
+  <a href="{{link}}index.html" class="btn btn-lg btn-{{color}}">{{name}}</a>
+  {{/each}}
+</div>
+
+{{{include 'partials/bottom.html'}}}

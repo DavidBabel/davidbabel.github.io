@@ -1,0 +1,40 @@
+{
+  "name": "davidbabel.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "open ./cours/index.html",
+    "test": "echo 'Error: no test specified' && exit 1",
+    "site:build": "./bin/build.sh",
+    "site:watch": "npm run site:build && chokidar '**/*.js' '**/*.json' '**/*.yml' '**/*.html' '**/*.css' -c 'npm run site:build' --ignore 'cours/' --ignore 'cours_tmp/' --ignore 'cours/' --ignore 'bin/'",
+    "site:build:production": "npm run site:build -- --prod",
+    "algo:build": "babel --presets=es2015 -o ./language_algo/index.js ./language_algo/index.es6.js",
+    "algo:watch": "chokidar './language_algo/index.es6.js' -c 'npm run algo:build' --ignore 'index.js'",
+    "pdf:build": "./bin/build-pdf.sh",
+    "pdf:clean": "rm -rf ./cours_pdf",
+    "warning:reset-datas": "./bin/reset-datas.sh",
+    "warning:reset-git": "./bin/reset-git.sh",
+    "codepen": "open ./codepen-helper.html",
+    "torestore-precommit": "npm run site:build:production && npm run algo:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBabel/davidbabel.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidBabel/davidbabel.github.io/issues"
+  },
+  "homepage": "https://github.com/DavidBabel/davidbabel.github.io#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chokidar-cli": "^1.2.0",
+    "fs-extra": "^5.0.0",
+    "handlebars-cmd": "github:davidbabel/handlebars-cmd",
+    "husky": "^0.14.3",
+    "js-yaml": "^3.10.0"
+  }
+}

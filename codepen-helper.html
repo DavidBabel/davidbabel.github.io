@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Codepen helper</title>
+</head>
+<body>
+  <textarea name="input" id="input" cols="100" rows="50"></textarea>
+  <textarea name="output" id="output" cols="100" rows="50" readonly></textarea>
+  <script>
+
+  String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+  };
+
+  const input = document.getElementById('input');
+  const output = document.getElementById('output');
+
+  input.addEventListener('input', () => {
+    output.value = input.value
+    .replaceAll('`', '#€#€')
+    .replaceAll('"', '`')
+    // .replaceAll('\n', '…')
+    // .replaceAll('\\n', '/n')
+    .replaceAll(':','÷')
+    .replaceAll('/', '\\')
+    // .replaceAll('\\n', '$$')
+  });
+  </script>
+</body>
+</html>
+

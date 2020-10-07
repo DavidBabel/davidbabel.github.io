@@ -1,0 +1,132 @@
+{{{include 'partials/top.html' '{"align": "center"}'}}}
+
+<h2 class="main-title">{{name}}</h2>
+<h4 class="sub-title">{{subtitle}} </h4>
+<div class="text-left">
+
+<ul class="list-group">
+  {{#each list}}
+  {{#if insert_separator}}
+</ul><ul class="list-group">
+  {{else}}
+  <li class="list-group-item {{class}}">
+    {{#if link}}
+      {{#if link.active}}
+        {{#if link.url}}
+      <a target="_blank" href="{{link.url}}">
+        <span class="cours_label">Cours </span>{{label}}</a>
+          {{#if link.solution_active}} (
+          <a href="##"
+            data-pen-type="{{link.solution.pen.type}}"
+            data-show-prompt="{{link.solution.pen.show_prompt}}"
+            data-title="{{label}} - Corrigé"
+            data-description="{{date}}"
+            data-html="{{link.solution.pen.html}}{{link.solution.pen.code}}"
+              {{#if link.solution.pen.override_editors}}
+            data-override-editors="{{link.solution.pen.override_editors}}"
+              {{/if}}
+              {{#if link.solution.pen.css}}
+            data-css="{{link.solution.pen.css}}"
+              {{/if}}
+              {{#if link.solution.pen.css_ext}}
+            data-css-ext="{{link.solution.pen.css_ext}}"
+              {{/if}}
+              {{#if link.solution.pen.js}}
+            data-js="{{link.solution.pen.js}}"
+              {{/if}}
+              {{#if link.solution.pen.js_ext}}
+            data-js-ext="{{link.solution.pen.js_ext}}"
+              {{/if}}
+              {{#if link.solution.pen.prompt}}
+            data-prompt="{{link.solution.pen.prompt}}"
+              {{/if}}
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+          {{/if}}
+          {{#if solution}}
+            {{#if solution.active}} (
+      <a target="_blank" href="{{solution.url}}">Corrigé</a> )
+            {{/if}}
+          {{/if}}
+          {{#if link.rendu}} (
+      <a target="_blank" href="{{link.rendu}}">Rendu :)</a> )
+          {{/if}}
+        {{else}}
+      <a href="##"
+        data-pen-type="{{link.pen.type}}"
+        data-show-prompt="{{link.pen.show_prompt}}"
+        data-title="{{label}}{{#if link.solution}}{{else}} - Corrigé{{/if}}"
+        data-description="{{date}}"
+        data-html="{{link.pen.html}}{{link.pen.code}}"
+          {{#if link.pen.override_editors}}
+        data-override-editors="{{link.pen.override_editors}}"
+          {{/if}}
+          {{#if link.pen.css}}
+        data-css="{{link.pen.css}}"
+          {{/if}}
+          {{#if link.pen.css_ext}}
+        data-css-ext="{{link.pen.css_ext}}"
+          {{/if}}
+          {{#if link.pen.js}}
+        data-js="{{link.pen.js}}"
+          {{/if}}
+          {{#if link.pen.js_ext}}
+        data-js-ext="{{link.pen.js_ext}}"
+          {{/if}}
+          {{#if link.pen.prompt}}
+        data-prompt="{{link.pen.prompt}}"
+          {{/if}}
+        onclick="return openInCodepen(this);">
+        {{label}}
+      </a>
+          {{#if link.solution}}
+            {{#if link.solution_active}} (
+      <a href="##"
+        data-pen-type="{{link.solution.pen.type}}"
+        data-show-prompt="{{link.solution.pen.show_prompt}}"
+        data-title="{{label}} - Corrigé"
+        data-description="{{date}}"
+        data-html="{{link.solution.pen.html}}{{link.solution.pen.code}}"
+          {{#if link.solution.pen.override_editors}}
+        data-override-editors="{{link.solution.pen.override_editors}}"
+          {{/if}}
+          {{#if link.solution.pen.css}}
+        data-css="{{link.solution.pen.css}}"
+          {{/if}}
+          {{#if link.solution.pen.css_ext}}
+        data-css-ext="{{link.solution.pen.css_ext}}"
+          {{/if}}
+          {{#if link.solution.pen.js}}
+        data-js="{{link.solution.pen.js}}"
+          {{/if}}
+          {{#if link.solution.pen.js_ext}}
+        data-js-ext="{{link.solution.pen.js_ext}}"
+          {{/if}}
+          {{#if link.solution.pen.prompt}}
+        data-prompt="{{link.solution.pen.prompt}}"
+          {{/if}}
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            {{/if}}
+          {{/if}}
+          {{#if link.rendu}} (
+      <a target="_blank" href="{{link.rendu}}">Rendu :)</a> )
+          {{/if}}
+        {{/if}}
+      {{else}}
+    <a href="#"><span class="cours_label">Cours </span>{{label}}</a>
+      {{/if}}
+      {{#if date}}
+    <span class="badge badge-secondary">{{date}}</span>
+      {{/if}}
+    {{else}}
+      <span class="cours_label">Cours </span>{{label}}
+    {{/if}}
+  </li>
+  {{/if}}
+  {{/each}}
+</ul>
+
+{{{include 'partials/bottom.html'}}}
