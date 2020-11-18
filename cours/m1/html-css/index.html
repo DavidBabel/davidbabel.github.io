@@ -564,11 +564,127 @@ container÷hover {
   <li class="list-group-item tp">
       <a target="_blank" href="https://codepen.io/davidbabel/pen/oaQEOa?editors=1100">
         <span class="cours_label">Cours </span>TP entainement 1 : comprendre les commentaires</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP entainement 1 : comprendre les commentaires - Corrigé"
+            data-description=""
+            data-html="<!--
+  Le but de ce TP est de faire apparaitre tout le contenu invisible
+  et donc d'enlever tous les commentaires du code HTML et CSS
+-->
+<!-- ceci est un commentaire HTML -->
+
+ceci est un texte invisible
+ceci est un texte visible
+<div>ceci est un calque invisible<\div>
+<div>ceci est un calque visible<\div>
+<p>
+  ceci est un code multiligne invisible
+<\p>
+<p>
+  ceci est un code multiligne visible
+<\p>
+"
+            data-css="\* ceci est un commentaire CSS *\
+\* Vous devez également enlever les commentaires pour faire apparaitre les styles *\
+div {
+  background-color÷ orange;
+}
+
+body {
+  background-color÷ #bbbbbb;
+  font-weight÷ bold;
+}
+
+
+p {
+  background-color÷ yellow;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://codepen.io/davidbabel/pen/GYwdKr?editors=1100">
         <span class="cours_label">Cours </span>TP entainement 2 : padding, margin et border</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP entainement 2 : padding, margin et border - Corrigé"
+            data-description=""
+            data-html="<!-- Il n'est pas nécéssaire de modifier le HTML -->
+<div id=`container`>
+  <div class=`bloc1-container`>
+    <bloc1>bloc 1<\bloc1>
+  <\div>
+  <div>
+    <bloc2>bloc 2<\bloc2>
+  <\div>
+  <div>
+    <bloc3>bloc 3<\bloc3>
+  <\div>
+<\div>
+"
+            data-css="\*
+  Enoncé÷ Obtenez le même résultat que sur l'apperçu. Note÷ l'écart est de 10 pixels
+  Contraintes ÷
+    - vous devez écire une règle css par `bloc`, trouver le bon selecteur et n'ajouter qu'une seule propriété css à l'intérieur
+    - le bloc 1 doit être placé en utilisant un `padding`
+    - le bloc 2 doit être placé en utilisant un `margin`
+    - le bloc 3 doit être placé en utilisant un `border`
+*\
+
+.bloc1-container {
+  padding÷ 10px;
+}
+
+bloc2 {
+  margin÷ 10px;
+}
+
+bloc3 {
+  border÷ 10px solid white;
+}
+
+
+
+\* Ci dessous, on a déjà un peu de CSS, il ne faut pas le modifier *\
+
+#container div {
+  border÷ 1px solid grey;
+  display÷ inline-block;
+}
+
+bloc1, bloc2, bloc3 {
+  font-family÷ arial;
+  font-weight÷ bold;
+  display÷ inline-block;
+  width÷ 60px;
+  height÷ 60px;
+  line-height÷ 60px;
+  text-align÷ center;
+}
+
+bloc1 {
+  background-color÷ lightgreen;
+}
+
+bloc2 {
+  background-color÷ orange;
+}
+
+bloc3 {
+  background-color÷ lightblue;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://codepen.io/davidbabel/pen/LgMNEW?editors=1100">
         <span class="cours_label">Cours </span>TP entainement 3 : positionner les éléments</a>
