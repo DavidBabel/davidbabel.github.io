@@ -148,6 +148,7 @@ footer {
 }
 .img-demo {
   max-width: 60%;
+  max-width: 400px;
   margin: 15px 80px;
   border: 2px solid grey;
   border-radius: 10px;
