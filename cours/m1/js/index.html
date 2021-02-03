@@ -455,87 +455,48 @@ console.log( prenom.length > nom.length );
                       </li>
   <li class="list-group-item tp">
       <a href="##"
-        data-pen-type="js"
+        data-pen-type="js-console"
         data-show-prompt=""
         data-title="TP1 - Utiliser les params d’entrée"
         data-description=""
-        data-html="<!-- Vous ne devez pas changer le HTML -->
-<div class`container`>
-  <span id=`calque`>Voici un </span>
-  <a href=`http://google.fr` target=`_blank`>
-    Lien vers google
-  </a><br>
-  <input type=`text` value=`55` class=`champ` />
-</div>
-"
-        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
-\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+        data-html=""
+        data-js="\\ Ecrire un algorithme qui prend en entrée 2 nombres ÷
 
-\\ Vous avez du contenu HTML dans votre page
+\\ Votre algorithme affiche ensuite successivement comme sur la console d’exemple ci dessous l’opération et le résultat de ÷
+\\ La somme de ces deux nombres
 
-\\ 1 - modifier le contenu du span pour afficher le texte `Voilà un`
-\\ réponse
+\\ La soustraction de ces deux nombres
 
+\\ La multiplication de ces deux nombres
 
-\\ 2 - modifier le lien pour qu'il pointe vers `http:\\yahoo.fr`
-\\ Vous pouvez tester en cliquant dessus
-\\ réponse
-
-
-\\ 3 - modifier le texte du liens pour écrire `lien vers yahoo`
-\\ réponse
-
-
-\\ 4 - Récupérer et afficher la valeur du `champ` dans la console
-\\ réponse
-
-
-\\ 5 - Modifier la valeur du champ par 90
-\\ réponse
+\\ La division de ces deux nombres
 "
         onclick="return openInCodepen(this);">
         TP1 - Utiliser les params d’entrée
       </a>
              (
       <a href="##"
-        data-pen-type="js"
+        data-pen-type="js-console"
         data-show-prompt=""
         data-title="TP1 - Utiliser les params d’entrée - Corrigé"
         data-description=""
-        data-html="<!-- Vous ne devez pas changer le HTML -->
-<div class`container`>
-  <span id=`calque`>Voici un </span>
-  <a href=`http://google.fr` target=`_blank`>
-    Lien vers google
-  </a><br>
-  <input type=`text` value=`55` class=`champ` />
-</div>
-"
-        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
-\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+        data-html=""
+        data-js="\\ Ecrire un algorithme qui prend en entrée 2 nombres ÷
+const a = 8;
+const b = 4;
 
-\\ Vous avez du contenu HTML dans votre page
+\\ Votre algorithme affiche ensuite successivement comme sur la console d’exemple ci dessous l’opération et le résultat de ÷
+\\ La somme de ces deux nombres
+console.log( String(a) + ` + ` + String(b) + ` = ` + (a + b) );
 
-\\ 1 - modifier le contenu du span pour afficher le texte `Voilà un`
-\\ réponse
-$('#calque').innerHTML = 'Voilà un';
+\\ La soustraction de ces deux nombres
+console.log( String(a) + ` - ` + String(b) + ` = ` + (a - b) );
 
-\\ 2 - modifier le lien pour qu'il pointe vers `http:\\yahoo.fr`
-\\ Vous pouvez tester en cliquant dessus
-\\ réponse
-$('a').setAttribute('href', 'http:\\yahoo.fr');
+\\ La multiplication de ces deux nombres
+console.log( String(a) + ` x ` + String(b) + ` = ` + (a * b) );
 
-\\ 3 - modifier le texte du liens pour écrire `lien vers yahoo`
-\\ réponse
-$('a').innerHTML = 'lien vers yahoo';
-
-\\ 4 - Récupérer et afficher la valeur du `champ` dans la console
-\\ réponse
-console.log( $('.champ').value );
-
-\\ 5 - Modifier la valeur du champ par 90
-\\ réponse
-$('.champ').value = 90;
+\\ La division de ces deux nombres
+console.log( String(a) + ` \ ` + String(b) + ` = ` + (a \ b) );
 "
         onclick="return openInCodepen(this);">
         Corrigé
@@ -571,17 +532,17 @@ $('.champ').value = 90;
         data-title="TP2-2 - Les tableaux"
         data-description=""
         data-html=""
-        data-js="\\ Créer un Array qui contient tous les jours de la semaine en chaîne de caractères
+        data-js="\\ Créer un Array vide appelé `prenoms`
 
-\\ Afficher le 3ème jour de la semaine
+\\ Ajoutez y l’ensemble de vos prénoms, si vous n’en avait qu’un, inventez vous une vie jusqu’à en avoir 3 ou 4
 
-\\ Afficher le 5ème élément du tableau
+\\ Afficher la taille du tableau
 
-\\ Afficher l’élément à l’index 6 du tableau
+\\ Vérifiez que le tableau contient bien votre prénom principal
 
-\\ Supprimer les jours du week-end
+\\ Modifiez votre prénom principal par « Anonyme »
 
-\\ Afficher l’ensemble du tableau restant
+\\ Afficher le tableau final
 "
         onclick="return openInCodepen(this);">
         TP2-2 - Les tableaux
@@ -594,17 +555,28 @@ $('.champ').value = 90;
         data-title="TP2-3 - Les tableaux"
         data-description=""
         data-html=""
-        data-js="\\ Créer un Array qui contient tous les jours de la semaine en chaîne de caractères
+        data-js="\\ Faire un programme qui prend un unique Number en paramètre
 
-\\ Afficher le 3ème jour de la semaine
+\\ Créer un Array nommé tabChiffre contenant tous les chiffres de 1 à 5.
 
-\\ Afficher le 5ème élément du tableau
+\\ Ajouter le Number passé en paramètre à la fin de votre tableau
 
-\\ Afficher l’élément à l’index 6 du tableau
+\\ Retirer le Number 3 du tableau à l’index 2
 
-\\ Supprimer les jours du week-end
+\\ Appliquer un x3 sur chaque Number restant du tableau
 
-\\ Afficher l’ensemble du tableau restant
+\\ Tester (et afficher) si la valeur 9 existe dans le Array.
+
+\\ Tester (et afficher) si la valeur 6 existe dans le Array.
+
+\\ Tester (et afficher) si l’index 6 existe dans votre Array.
+
+\\ Afficher la taille de votre Array
+
+\\ Afficher maintenant le Array final
+
+\\ Tester votre programme avec le paramètre 3, 6 et 12
+\\ (en modifiant le paramètre d'entrée de votre programme)
 "
         onclick="return openInCodepen(this);">
         TP2-3 - Les tableaux
