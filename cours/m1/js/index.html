@@ -820,11 +820,11 @@ if( nb >= 0 ) {
         data-html=""
         data-js="\\ Faire un programme qui prend une String en paramètre
 
-\\ Si la taille de cette String fait plus de 10 caractères afficher le message÷ « cette chaine à une taille de n »
-
 \\ Si la taille de cette String fait plus de 20 caractères afficher le message÷ « cette chaine est trop longue »
 
-\\ Si cette String est vide, afficher « cette chaine est vide »
+\\ Sinon Si la taille de cette String fait plus de 10 caractères afficher le message÷ « cette chaine à une taille de n »
+
+\\ Sinon Si cette String est vide, afficher « cette chaine est vide »
 
 \\ Sinon afficher la chaine
 "
@@ -842,19 +842,20 @@ if( nb >= 0 ) {
 
 const chaine = `coucou`;
 
-\\ Si la taille de cette String fait plus de 10 caractères afficher le message÷ « cette chaine à une taille de n »
-
 \\ Si la taille de cette String fait plus de 20 caractères afficher le message÷ « cette chaine est trop longue »
 
-\\ Si cette String est vide, afficher « cette chaine est vide »
+\\ Sinon Si la taille de cette String fait plus de 10 caractères afficher le message÷ « cette chaine à une taille de n »
+
+\\ Sinon Si cette String est vide, afficher « cette chaine est vide »
 
 \\ Sinon afficher la chaine
 
 var tailleChaine = chaine.length;
 
-if( tailleChaine > 10 ) {
+if ( tailleChaine > 20 ) {
   console.log(`cette chaine à une taille de` + String(tailleChaine) );
-} else if ( tailleChaine > 20 ) {
+}
+else if( tailleChaine > 10 ) {
   console.log(`cette chaine est trop longue`);
 } else if ( tailleChaine === 0 ) {
   console.log(`cette chaine est vide`);
