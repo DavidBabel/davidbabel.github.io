@@ -455,24 +455,159 @@ console.log( prenom.length > nom.length );
                       </li>
   <li class="list-group-item tp">
       <a href="##"
-        data-pen-type="js-console"
+        data-pen-type="js"
         data-show-prompt=""
         data-title="TP1 - Utiliser les params d’entrée"
         data-description=""
-        data-html=""
-        data-js="\\ Ecrire un algorithme qui prend en entrée 2 nombres ÷
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<div class`container`>
+  <span id=`calque`>Voici un </span>
+  <a href=`http://google.fr` target=`_blank`>
+    Lien vers google
+  </a><br>
+  <input type=`text` value=`55` class=`champ` />
+</div>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
 
-\\ Votre algorithme affiche ensuite successivement comme sur la console d’exemple ci dessous l’opération et le résultat de ÷
-\\ La somme de ces deux nombres
+\\ Vous avez du contenu HTML dans votre page
 
-\\ La soustraction de ces deux nombres
+\\ 1 - modifier le contenu du span pour afficher le texte `Voilà un`
+\\ réponse
 
-\\ La multiplication de ces deux nombres
 
-\\ La division de ces deux nombres
+\\ 2 - modifier le lien pour qu'il pointe vers `http:\\yahoo.fr`
+\\ Vous pouvez tester en cliquant dessus
+\\ réponse
+
+
+\\ 3 - modifier le texte du liens pour écrire `lien vers yahoo`
+\\ réponse
+
+
+\\ 4 - Récupérer et afficher la valeur du `champ` dans la console
+\\ réponse
+
+
+\\ 5 - Modifier la valeur du champ par 90
+\\ réponse
 "
         onclick="return openInCodepen(this);">
         TP1 - Utiliser les params d’entrée
+      </a>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP1 - Utiliser les params d’entrée - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<div class`container`>
+  <span id=`calque`>Voici un </span>
+  <a href=`http://google.fr` target=`_blank`>
+    Lien vers google
+  </a><br>
+  <input type=`text` value=`55` class=`champ` />
+</div>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Vous avez du contenu HTML dans votre page
+
+\\ 1 - modifier le contenu du span pour afficher le texte `Voilà un`
+\\ réponse
+$('#calque').innerHTML = 'Voilà un';
+
+\\ 2 - modifier le lien pour qu'il pointe vers `http:\\yahoo.fr`
+\\ Vous pouvez tester en cliquant dessus
+\\ réponse
+$('a').setAttribute('href', 'http:\\yahoo.fr');
+
+\\ 3 - modifier le texte du liens pour écrire `lien vers yahoo`
+\\ réponse
+$('a').innerHTML = 'lien vers yahoo';
+
+\\ 4 - Récupérer et afficher la valeur du `champ` dans la console
+\\ réponse
+console.log( $('.champ').value );
+
+\\ 5 - Modifier la valeur du champ par 90
+\\ réponse
+$('.champ').value = 90;
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
+  <li class="list-group-item tp">
+      <a href="##"
+        data-pen-type="js-console"
+        data-show-prompt=""
+        data-title="TP2-1 - Les tableaux"
+        data-description=""
+        data-html=""
+        data-js="\\ Créer un Array qui contient tous les jours de la semaine en chaîne de caractères
+
+\\ Afficher le 3ème jour de la semaine
+
+\\ Afficher le 5ème élément du tableau
+
+\\ Afficher l’élément à l’index 6 du tableau
+
+\\ Supprimer les jours du week-end
+
+\\ Afficher l’ensemble du tableau restant
+"
+        onclick="return openInCodepen(this);">
+        TP2-1 - Les tableaux
+      </a>
+                        </li>
+  <li class="list-group-item tp">
+      <a href="##"
+        data-pen-type="js-console"
+        data-show-prompt=""
+        data-title="TP2-2 - Les tableaux"
+        data-description=""
+        data-html=""
+        data-js="\\ Créer un Array qui contient tous les jours de la semaine en chaîne de caractères
+
+\\ Afficher le 3ème jour de la semaine
+
+\\ Afficher le 5ème élément du tableau
+
+\\ Afficher l’élément à l’index 6 du tableau
+
+\\ Supprimer les jours du week-end
+
+\\ Afficher l’ensemble du tableau restant
+"
+        onclick="return openInCodepen(this);">
+        TP2-2 - Les tableaux
+      </a>
+                        </li>
+  <li class="list-group-item tp">
+      <a href="##"
+        data-pen-type="js-console"
+        data-show-prompt=""
+        data-title="TP2-3 - Les tableaux"
+        data-description=""
+        data-html=""
+        data-js="\\ Créer un Array qui contient tous les jours de la semaine en chaîne de caractères
+
+\\ Afficher le 3ème jour de la semaine
+
+\\ Afficher le 5ème élément du tableau
+
+\\ Afficher l’élément à l’index 6 du tableau
+
+\\ Supprimer les jours du week-end
+
+\\ Afficher l’ensemble du tableau restant
+"
+        onclick="return openInCodepen(this);">
+        TP2-3 - Les tableaux
       </a>
                         </li>
   <li class="list-group-item cours">
