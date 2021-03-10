@@ -1268,8 +1268,55 @@ for (let i = 0; i < tableauNombres.length; i = i + 1 ) {
     <a href="#"><span class="cours_label">Cours </span>5 - Les fonctions</a>
   </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP1 - jouer avec les fonctions</a>
-  </li>
+      <a href="##"
+        data-pen-type="js-console"
+        data-show-prompt=""
+        data-title="TP1 - jouer avec les fonctions"
+        data-description=""
+        data-html="<script>
+  console.clear();
+  function test_double() {
+    if ( double( 7 ) == 14 && double( 14 ) == 28 ) {
+      console.log('tu as réussi le 1 !');
+    } else {
+      console.log('le 1 ne fonctionne pas encore, double de 7 renvoit '+double(7));
+    }
+  }
+
+  function test_carre() {
+    if ( !est_carre_de( 7 , 14 ) && est_carre_de( 7 , 49 ) ) {
+      console.log( 'ta fonction est_carre_de fonctionne' );
+    } else {
+      console.log('ta fonction est_carre_de ne fonctionne pas');
+    }
+  }
+</script>
+"
+        data-js="\\ 1. écrire la function `double` qui double la valeur d'un nombre
+
+
+\\ si vous réussissez, le code suivant affichera ok dans la console
+test_double();
+
+\\ 2. écrire la function `carre` qui renvois le carre d'un nombre
+
+
+\\ petite aide pour vérifier dans la console que ca marche
+\\ doit afficher 49
+console.log( carre( 7 ) );
+
+\\ écrire la function `est_carre_de` qui prend deux paramètres nombres
+\\     La fonction renvoit true si le deuxième nombre est le carre du premier
+\\     La fonction renvoit faux sinon
+
+
+\\ si vous réussissez, le code suivant affichera ok dans la console
+test_carre();
+"
+        onclick="return openInCodepen(this);">
+        TP1 - jouer avec les fonctions
+      </a>
+                        </li>
   <li class="list-group-item tp">
     <a href="#"><span class="cours_label">Cours </span>TP2 - la fonction existe</a>
   </li>
