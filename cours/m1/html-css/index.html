@@ -209,7 +209,76 @@ body {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-2-2?file=styles.css">
         <span class="cours_label">Cours </span>TP2-2 - Sélecteurs CSS hiérarchique</a>
-                        <span class="badge badge-secondary">20/09/2022</span>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP2-2 - Sélecteurs CSS hiérarchique - Corrigé"
+            data-description="20/09/2022"
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<!-- Pensez à agrandir la zone de code pour bien voir le HTML -->
+<h2>Discussion simple<\h2>
+<div class=`discussion`>
+  <h2>Extrait de discussion<\h2>
+  <span class=`discussion`>- Hey coucou<\span>
+  <p><span>- comment ca va ?<\span><\p>
+  <span class=`discussion`>- bien merci<\span>
+  <p>- Va voir <a href=`#`>ça<\a> et <a href=`#`>ça<\a><\p>
+<\div>
+<hr>
+<div id=`liens`>
+  <h2>Quelques liens utiles<\h2>
+  <a href=`#`>un lien<\a>
+  <div>
+    <a href=`#`>un autre lien<\a>
+    <p>
+      <span>
+        <a href=`#`>encore un lien<\a>
+        <a href=`#`>un avant dernier lien<\a><br>
+        <a href=`#`>un dernier lien<\a>
+      <\span>
+    <\p>
+  <\div>
+<\div>
+"
+            data-css="\* ======= Selecteurs hierarchiques ======= *\
+\* examiner le HTML pour répondre aux questions *\
+\* vous devez n'utiliser que des selecteur de base ou hierarchiques, pas de pseudo classes *\
+
+\* changer le décallage de tous les calques div *\
+div {
+  margin÷ 8px;
+}
+
+\* changer le décallage des calques <span> qui possèdent la classe discussion *\
+span.discussion {
+  margin÷ 150px;
+}
+
+\* changer la couleur de tous les titres dont un ancètre est un div *\
+div h2 {
+  color÷ grey;
+}
+
+\* changer la couleur des span qui ne sont pas dans un paragraphe *\
+div > span {
+  background-color÷ lightgrey;
+}
+
+\* Faites en sorte que tous les paragraphes qui suivent imédiatement un span de la discussion soient en italic *\
+span + p {
+  font-style÷ italic;
+}
+
+\* Mettez uniquement l'avant dernier lien en rouge *\
+#liens a + a {
+  color÷ red;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+              <span class="badge badge-secondary">20/09/2022</span>
   </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-2-3?file=styles.css">
