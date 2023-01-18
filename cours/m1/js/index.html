@@ -789,15 +789,86 @@ for ( var i = 0; i <= 10; i = i + 1 ) {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js3-tp-4-3?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP4-3 - manipuler les boucles (algo)</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP4-3 - manipuler les boucles (algo) - Corrigé"
+            data-description=""
+            data-html=""
+            data-js="\\ Créer un tableau vide.
+var tableau = [];
+
+\\ faire une boucle for de 1 à 10
+\\ mettre le chiffre courant au carré dans votre tableau
+for ( var i = 0 ; i <= 10 ; i = i +1 )
+{
+  tableau.push( i * i );
+}
+
+\\ Afficher votre tableau
+console.log(tableau);
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js3-tp-5-1?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP5-1 - boucles imbriquées</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP5-1 - boucles imbriquées - Corrigé"
+            data-description=""
+            data-html=""
+            data-js="\\ On veut générer une table de multiplication
+\\ Faire une boucle de 1 à 5 qui va gérer les lignes
+\\ Dans la boucle, créer un tableau « ligne »
+for( var i = 0; i <= 5 ; i = i + 1 )
+{
+  var ligne = [];
+  \\ Faire une autre boucle qui va alors créer les cases pour chaque ligne (créer une autre variable de boucle par exemple `j`)
+  for (let j = 0; j <= 5; j++) {
+    \\ Ajouter dans le tableau « ligne » la multiplication de vos deux variablesde boucle.
+    ligne.push( i * j );
+  }
+  \\ Afficher la ligne avant la fin de la 1ère boucle
+  console.log(ligne);
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js3-tp-5-2?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP5-2 - boucles imbriquées 2</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP5-2 - boucles imbriquées 2 - Corrigé"
+            data-description=""
+            data-html=""
+            data-js="\\ Faire un programme qui prend des NOMBRE entier dans un tableau en paramètres d’entrée, peut importe leur nombre.
+
+const tableauNombres = [2, 1, 3, 5];
+
+\\ Chaque paramètre est affiché autant de fois que sa valeur
+
+for (var i = 0; i < tableauNombres.length; i = i + 1 ) {
+  var nombreCourant = tableauNombres[i];
+  for (var j = 0; j < nombreCourant; j = j + 1 ) {
+    console.log(nombreCourant);
+  }
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item cours">
       <a target="_blank" href="cours/5 - les fonctions.key.pdf">
         <span class="cours_label">Cours </span>5 - Les fonctions</a>
@@ -805,25 +876,260 @@ for ( var i = 0; i <= 10; i = i + 1 ) {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-1?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP1 - jouer avec les fonctions</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP1 - jouer avec les fonctions - Corrigé"
+            data-description=""
+            data-html="<script>
+  console.clear();
+  function test_double() {
+    if ( double( 7 ) == 14 && double( 14 ) == 28 ) {
+      console.log('tu as réussi le 1 !');
+    } else {
+      console.log('le 1 ne fonctionne pas encore, double de 7 renvoit '+double(7));
+    }
+  }
+
+  function test_carre() {
+    if ( !est_carre_de( 7 , 14 ) && est_carre_de( 7 , 49 ) ) {
+      console.log( 'ta fonction est_carre_de fonctionne' );
+    } else {
+      console.log('ta fonction est_carre_de ne fonctionne pas');
+    }
+  }
+</script>
+"
+            data-js="\\ 1. écrire la function `double` qui double la valeur d'un nombre
+function double ( nombre )
+{
+  return nombre * 2;
+}
+
+\\ si vous réussissez, le code suivant affichera `ok` dans la console
+test_double();
+
+\\ 2. écrire la function `carre` qui renvois le carre d'un nombre
+function carre( nombre )
+{
+  return nombre * nombre;
+}
+
+\\ petite aide pour vérifier dans la console que ca marche
+\\ doit afficher 49
+console.log( carre( 7 ) );
+
+\\ 3. écrire la function `est_carre_de` qui prend deux paramètres nombres
+\\     La fonction renvoit true si le deuxième nombre est le carre du premier
+\\     La fonction renvoit faux sinon
+function est_carre_de( nombre_1, nombre_2 )
+{
+  if( carre(nombre_1) == nombre_2 )
+  {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+\\ si vous réussissez, le code suivant affichera ok dans la console
+test_carre();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-2?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP2 - la fonction existe</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP2 - la fonction existe - Corrigé"
+            data-description=""
+            data-html="<script>
+  function test_existe() {
+    if (typeof existe !== 'undefined') {
+      if (false !== existe()) {
+        console.log('Error÷ ne pas passer devrait retourner faux');
+        return;
+      }
+      if (true !== existe(5)) {
+        console.log('Error÷ une valeur entière positive devrait exister');
+        return;
+      }
+      var toto;
+      if (false !== existe(toto)) {
+        console.log('Error÷ une variable vide ne devrait pas exister');
+        return;
+      }
+      if (true !== existe(`anything`)) {
+        console.log('Error÷ une chaine devrait exister');
+        return;
+      }
+      console.log('la fonction existe marche correctement');
+    } else {
+      console.log('la fonction n‘a pas encore été écrite');
+    }
+  }
+<\script>
+"
+            data-js="\\ faire une fonction “existe“ qui prend un paramètre et test si il existe et si sa valeur n'est pas falseable
+
+function existe (variable) {
+  return Boolean(variable);
+}
+
+\\ vous pouvez écrire ici des console.log pour débugger votre code
+\\ essayer avec 50, 0, ``, `test`
+
+\\ cette fonction va tester que votre fonction marche bien
+test_existe();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-3?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP3 - la fonction divisible</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP3 - la fonction divisible - Corrigé"
+            data-description=""
+            data-html="<script>
+  function test_est_divisible_par() {
+    if (typeof est_divisible_par !== 'undefined') {
+      if (false !== est_divisible_par(null, 0)) {
+        console.log('Error: la division par 0 devrait retourner false');
+        return;
+      }
+      if (true !== est_divisible_par(5, 1)) {
+        console.log('Error: la division par 1 devrait retourner vrai');
+        return;
+      }
+      if (true !== est_divisible_par(9, 3)) {
+        console.log('Error: 9 devrait être divisible par 3');
+        return;
+      }
+      if (false !== est_divisible_par(9, 4)) {
+        console.log('Error: 9 devrait pas être divisible par 3');
+        return;
+      }
+      console.log('la fonction est_divisible_par marche correctement');
+    } else {
+      console.log('la fonction n‘a pas encore été écrite');
+    }
+  }
+</script>
+"
+            data-js="\\ faire une fonction est_divisible_par qui prend deux nombre et renvoie si le premier est divisible par le second
+
+function est_divisible_par (a, b) {
+  return a % b === 0;
+}
+
+\\ vous pouvez écrire ici des console.log pour débugger votre code
+
+\\ cette fonction va tester que votre fonction marche bien
+test_est_divisible_par();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-4?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP4 - trouver les diviseurs</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP4 - trouver les diviseurs - Corrigé"
+            data-description=""
+            data-html="<script>
+  function test_get_diviseurs() {
+    var log = console.log;
+    console.log = () => {};
+    if (typeof get_diviseurs !== 'undefined') {
+      if ('[]' !== JSON.stringify(get_diviseurs(-12))) {
+        console.log = log;
+        console.log('Error÷ une valeur négative dois retourner un tableau vide');
+        return;
+      }
+      if ('[12,8,6,4,3,2]' != JSON.stringify(get_diviseurs(24))) {
+        console.log = log;
+        console.log('Error÷ 24 devrait avoir les diviseurs suivants ÷ [12, 8, 6, 4, 3, 2]');
+        return;
+      }
+      if ('[]' != JSON.stringify(get_diviseurs(101))) {
+        console.log = log;
+        console.log('Error÷ 101 devrait être un nombre premier');
+        return;
+      }
+      console.log = log;
+      console.log('la fonction get_diviseurs marche correctement');
+    } else {
+      console.log = log;
+      console.log('la fonction n‘a pas encore été écrite');
+    }
+  }
+<\script>
+"
+            data-js="\\ faire une fonction `get_diviseurs` qui prend un nombre entier positif en paramètre et qui renvoit un tableau avec la liste de ses diviseurs
+\\ pas besoin de le renvoyer lui même ou de renvoyer 1
+\\ si c'est un nombre premier, la fonction afficher `[nombre] est premier` dans la console
+\\ si le nombre n'est pas positif, renvoyer un tableu vide et afficher une erreur dans la console
+
+function est_divisible_par (a, b) {
+  return a % b === 0
+}
+
+function get_diviseurs (nombre) {
+  if( nombre < 0 ) {
+    console.log(`le chiffre n'est pas positif`);
+    return [];
+  }
+
+  var diviseurs = [];
+
+  for(var i = nombre-1 ; i > 1; i = i - 1) {
+    if( est_divisible_par(nombre, i) ) {
+      diviseurs.push( i );
+    }
+  }
+
+  if( diviseurs.length === 0) {
+    console.log(nombre + ` est premier`);
+  }
+
+  return diviseurs;
+}
+
+\\ vous pouvez écrire ici des console.log pour débugger votre code
+\\ essayer avec 24, 56, 101 et 4373683
+console.log( get_diviseurs(24) );
+
+\\ cette fonction va tester que votre fonction marche bien
+test_get_diviseurs();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item cours">
-    <a href="#"><span class="cours_label">Cours </span>6 - Les objets</a>
-  </li>
+      <a target="_blank" href="cours/6 - les objets.key.pdf">
+        <span class="cours_label">Cours </span>6 - Les objets</a>
+                      </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP1 - manipuler les objets</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js5-tp-1?file=script.js&devtoolsheight=100">
+        <span class="cours_label">Cours </span>TP1 - manipuler les objets</a>
+                      </li>
   <li class="list-group-item cours">
     <a href="#"><span class="cours_label">Cours </span>7 - JavaScript dans le web</a>
   </li>
