@@ -1401,7 +1401,59 @@ $('#h').on('click', () => toggle('invisible'));
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js6-tp-3?file=script.js&devtoolsheight=70">
         <span class="cours_label">Cours </span>TP3 - traducteur alsacien</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP3 - traducteur alsacien - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<textarea id=`source` cols=`60` rows=`10`>
+
+<\textarea>
+<textarea id=`destination` cols=`60` rows=`10` readonly=`readonly`>
+
+<\textarea>
+<button onclick=`copy_alsacien_text()`>
+  Tester ma fonction
+<\button>
+"
+            data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ on a une fonction qui permet de transformer du texte en alsacien
+function clean( texte ) {
+  return texte
+    .replace(\r\g,'rr').replace(\R\g,'Rr')
+    .replace(\d\g,'t').replace(\D\g,'T')
+    .replace(\v\g,'f').replace(\V\g,'F')
+    .replace(\j\g,'ch').replace(\J\g,'Ch');
+}
+
+\\ le but de cet exercice est de taper du texte dans le champ de source de gauche
+\\ et que ce texte apparaisse `alsacisé` dans le champ de droite
+
+\\ 1 - écrire une fonction `copy_alsacien_text` qui ne prend aucun paramètre et ne retourne rien
+\\ Cette fonction permet de mettre à jour la liste de droite avec le contenu alsacisé de la liste de gauche
+\\ Vous pouvez tester votre fonction en écrivant du texte à gauche et en cliquant sur le bouton
+\\ réponse
+function copy_clean_text() {
+  $('#destination').value = clean( $('#source').value );
+}
+
+\\ 2 - tester de taper la chaine `Je vais te dire mon identité` et appuyez sur le bouton
+\\ ce bouton devrait vous aider à travailler votre accent
+
+
+\\ 3 - On souhaite maintenant que le texte alsacisé s'affiche en live
+\\     pour se faire on va ajouter un écouteur d'évenement de type `input`
+\\ réponse
+$('#source').on('input', copy_clean_text);
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a href="##"
         data-pen-type="js"
@@ -1451,7 +1503,59 @@ function clean( texte ) {
         onclick="return openInCodepen(this);">
         TP3 - traducteur alsacien (backup si ça marche pas)
       </a>
-                        </li>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP3 - traducteur alsacien (backup si ça marche pas) - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<textarea id=`source` cols=`60` rows=`10`>
+
+<\textarea>
+<textarea id=`destination` cols=`60` rows=`10` readonly=`readonly`>
+
+<\textarea>
+<button onclick=`copy_alsacien_text()`>
+  Tester ma fonction
+<\button>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ on a une fonction qui permet de transformer du texte en alsacien
+function clean( texte ) {
+  return texte
+    .replace(\r\g,'rr').replace(\R\g,'Rr')
+    .replace(\d\g,'t').replace(\D\g,'T')
+    .replace(\v\g,'f').replace(\V\g,'F')
+    .replace(\j\g,'ch').replace(\J\g,'Ch');
+}
+
+\\ le but de cet exercice est de taper du texte dans le champ de source de gauche
+\\ et que ce texte apparaisse `alsacisé` dans le champ de droite
+
+\\ 1 - écrire une fonction `copy_alsacien_text` qui ne prend aucun paramètre et ne retourne rien
+\\ Cette fonction permet de mettre à jour la liste de droite avec le contenu alsacisé de la liste de gauche
+\\ Vous pouvez tester votre fonction en écrivant du texte à gauche et en cliquant sur le bouton
+\\ réponse
+function copy_clean_text() {
+  $('#destination').value = clean( $('#source').value );
+}
+
+\\ 2 - tester de taper la chaine `Je vais te dire mon identité` et appuyez sur le bouton
+\\ ce bouton devrait vous aider à travailler votre accent
+
+
+\\ 3 - On souhaite maintenant que le texte alsacisé s'affiche en live
+\\     pour se faire on va ajouter un écouteur d'évenement de type `input`
+\\ réponse
+$('#source').on('input', copy_clean_text);
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js6-tp-4?file=script.js&devtoolsheight=70">
         <span class="cours_label">Cours </span>TP4 - jouer avec JavaScript</a>
