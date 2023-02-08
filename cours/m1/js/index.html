@@ -1205,11 +1205,13 @@ div {
       </a>
                         </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP2 - HTML / JS / CSS</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-2?file=script.js&devtoolsheight=80">
+        <span class="cours_label">Cours </span>TP2 - HTML / JS / CSS</a>
+                      </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP3 - traducteur alsacien</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-3?file=script.js&devtoolsheight=80">
+        <span class="cours_label">Cours </span>TP3 - traducteur alsacien</a>
+                      </li>
   <li class="list-group-item tp">
       <a href="##"
         data-pen-type="js"
@@ -1261,8 +1263,71 @@ function clean( texte ) {
       </a>
                         </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP4 - jouer avec JavaScript</a>
-  </li>
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP4 - jouer avec JavaScript"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<label for=`nombre`>Table des<\label>
+<input id=`nombre`
+      type=`number`
+      value=`4`
+      placeholder=`Saisir un chiffre` \>
+<button onclick=`calcul()`>
+  test
+<\button><br>
+<textarea id=`result`
+          cols=`40`
+          rows=`16`
+          readonly=`readonly`>
+<\textarea>
+…………………………………………………………………………………………………………………………
+<script>
+  function test_multiplication () {
+    if( multiplication( 4 , 5 ) === `4 x 5 = 20§§` ) {
+      console.log(`Bien joué ta fonction à l'air de marcher`)
+    } else {
+      console.log(`Désolé, multiplication( 4 , 5 ) retourne `,multiplication( 4 , 5 ), `et devrait retourner '4 x 5 = 20§§'`);
+    }
+  }
+<\script>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Le but de ce TP est d'afficher une table de multiplication à partir d'un nombre passé en paramètre
+
+\\ 1 - Commencez par écrire une fonction `multiplication`
+\\ Elle prend deux paramètres et retourne une chaine (string)
+\\ tel que si j'appelle la fonction `multiplication( 4 , 5 )`
+\\ elle retourne la chaine `4 x 5 = 20§§`
+\\ note ÷ le §§ à la fin permet un retour à la ligne et doit être entre double quote `§§`
+\\ réponse ÷
+
+
+\\ cette fonction test_multiplication teste votre fonction multiplication et affiche un message dans la console si elle est correcte
+\\ n'en tenez pas compte, cela test uniquement votre code
+test_multiplication ();
+
+\\ 2 - Créez une fonction `calcul` qui ne prend aucun paramètre et qui ne retourne rien, voici l'ordre des instructions ÷
+\\ Cette fonction lit le contenu de l'input #nombre et stock cette valeur dans une variable `nombre`
+\\ créez maintenant une autre variable string vide ÷
+\\     var resultat = ``;
+\\ elle va contenir l'ensemble de la table de multiplication
+\\ Ajoutez maintenant une boucle `for` allant de i = 1 à 10
+\\ Dans cette boucle on met à jour le contenu de notre variable `resultat` avec le retour de la fonction multiplication pour chaque `i` avec `nombre`
+\\ enfin remplissez le textarea `#result` avec le contenu de votre variable `resultat`
+\\ réponse ÷
+
+
+\\ 3 - On va créer un event listener sur l'élément #nombre en écoutant l'evenement 'input' afin de lancer notre fontion calcul automatiquement
+\\ réponse ÷
+"
+        onclick="return openInCodepen(this);">
+        TP4 - jouer avec JavaScript
+      </a>
+                        </li>
   <li class="list-group-item tp">
     <a href="#"><span class="cours_label">Cours </span>TP5 - jouer avec “this“</a>
   </li>
