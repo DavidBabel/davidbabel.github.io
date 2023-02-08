@@ -1137,7 +1137,51 @@ test_get_diviseurs();
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js6-tp-1?file=script.js&devtoolsheight=80">
         <span class="cours_label">Cours </span>TP1 - modifier le HTML</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP1 - modifier le HTML - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<div class`container`>
+  <span id=`calque`>Voici un </span>
+  <a href=`http://google.fr` target=`_blank`>
+    Lien vers google
+  </a><br>
+  <input type=`text` value=`55` class=`champ` />
+</div>
+"
+            data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Vous avez du contenu HTML dans votre page
+
+\\ 1 - modifier le contenu du span pour afficher le texte `Voilà un`
+\\ réponse
+$('#calque').innerHTML = 'Voilà un';
+
+\\ 2 - modifier le lien pour qu'il pointe vers `http:\\yahoo.fr`
+\\ Vous pouvez tester en cliquant dessus
+\\ réponse
+$('a').setAttribute('href', 'http:\\yahoo.fr');
+
+\\ 3 - modifier le texte du liens pour écrire `lien vers yahoo`
+\\ réponse
+$('a').innerHTML = 'lien vers yahoo';
+
+\\ 4 - Récupérer et afficher la valeur du `champ` dans la console
+\\ réponse
+console.log( $('.champ').value );
+
+\\ 5 - Modifier la valeur du champ par 90
+\\ réponse
+$('.champ').value = 90;
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a href="##"
         data-pen-type="js"
@@ -1329,8 +1373,65 @@ test_multiplication ();
       </a>
                         </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP5 - jouer avec “this“</a>
-  </li>
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP5 - jouer avec “this“"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+HTML ÷ <input id=`html_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br>
+Contenu ÷ <input id=`contenu_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br><br>
+<button contenu=`premiere valeur`>
+  mon bouton 1
+<\button><br>
+<button contenu=`autre valeur`>
+  mon bouton 2
+<\button><br>
+<button contenu=`valeur quelconque`>
+  mon bouton 3
+<\button><br>
+<button contenu=`encore une petite`>
+  mon bouton 4
+<\button><br>
+<button contenu=`un contenu`>
+  mon bouton 5
+<\button><br>
+<button contenu=`et le final`>
+  mon bouton 6
+<\button><br>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - faire une fonction voir_element qui affiche l'element courant `this` dans la console
+\\ réponse ÷
+
+
+\\ 2 - associer cette fonction à vos boutons
+\\ réponse ÷
+
+
+\\ 3 - ecrivez une autre fonction qui utilise `this` qui sera aussi appelée au clic sur l'un des bouton
+\\ afficher le contenu HTML du bouton cliqué dans le champ `html_clique`
+\\ pensez à associer votre fonction au clic sur les boutons pour pouvoir la tester
+\\ réponse ÷
+
+
+\\ 4 - modifier votre fonction pour que maintenant elle remplisse aussi le champ `contenu_clique`
+\\ avec l'attribut du bouton qui a été cliqué
+"
+        onclick="return openInCodepen(this);">
+        TP5 - jouer avec “this“
+      </a>
+                        </li>
   <li class="list-group-item cours">
     <a href="#"><span class="cours_label">Cours </span>8 - TP Final</a>
   </li>
