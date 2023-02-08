@@ -1185,7 +1185,80 @@ $('.champ').value = 90;
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js6-tp-2?file=script.js&devtoolsheight=80">
         <span class="cours_label">Cours </span>TP2 - HTML / JS / CSS</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP2 - HTML / JS / CSS - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne modifiez pas le HTML -->
+<div>Mon calque magique<\div>
+<br \>
+<button id=`u`>souligner<\button>
+<button id=`b`>gras<\button>
+<button id=`i`>italic<\button>
+<button id=`r`>rouge<\button>
+<button id=`h`>masquer\afficher<\button>
+"
+            data-css="\* Vous ne modifiez pas le CSS *\
+.souligne {
+  text-decoration÷ underline;
+}
+
+.gras {
+  font-weight÷ bold;
+}
+
+.italic {
+  font-style÷ italic;
+}
+
+.rouge {
+  color÷ red;
+}
+
+.invisible {
+  display÷ none;
+}
+
+div {
+  margin÷ 10px;
+}
+"
+            data-js="\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - créez une variable `elem` qui contient votre element div
+\\ réponse
+var elem = $('div');
+
+\\ 2 - créer une fonction `souligne` qui toggle la classe `souligne` à `elem`
+\\ réponse
+function souligne() {
+  elem.classList.toggle(`souligne`);
+}
+
+\\ 3 - Ajouter un event listener sur le bouton `souligner` pour qu'au clic la fonction souligne soit appelée sur `elem`
+\\ réponse
+$('#u').on('click', souligne);
+
+\\ 4 - On ne va pas répéter ca 5 fois. Créer une fonction `toggle` qui prend un nom de classe comme paramètre et qui possède une unique instruction qui toggle cette classe sur notre `elem`
+\\ réponse
+function toggle( nom_classe ) {
+  elem.classList.toggle( nom_classe );
+}
+
+\\ 5 - En utilisant la classe précédente, associez maintenant les toggle de classe `gras`, `italic`, `rouge`, `invisible` à leur bouton respectif
+\\ Note ÷ utilisez les arrow function ÷ ` () => `
+\\ réponse
+$('#b').on('click', () => toggle('gras'));
+$('#i').on('click', () => toggle('italic'));
+$('#r').on('click', () => toggle('rouge'));
+$('#h').on('click', () => toggle('invisible'));
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a href="##"
         data-pen-type="js"
@@ -1251,7 +1324,80 @@ div {
         onclick="return openInCodepen(this);">
         TP2 - HTML / JS / CSS (backup si ça marche pas)
       </a>
-                        </li>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP2 - HTML / JS / CSS (backup si ça marche pas) - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne modifiez pas le HTML -->
+<div>Mon calque magique<\div>
+<br \>
+<button id=`u`>souligner<\button>
+<button id=`b`>gras<\button>
+<button id=`i`>italic<\button>
+<button id=`r`>rouge<\button>
+<button id=`h`>masquer\afficher<\button>
+"
+        data-css="\* Vous ne modifiez pas le CSS *\
+.souligne {
+  text-decoration÷ underline;
+}
+
+.gras {
+  font-weight÷ bold;
+}
+
+.italic {
+  font-style÷ italic;
+}
+
+.rouge {
+  color÷ red;
+}
+
+.invisible {
+  display÷ none;
+}
+
+div {
+  margin÷ 10px;
+}
+"
+        data-js="\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - créez une variable `elem` qui contient votre element div
+\\ réponse
+var elem = $('div');
+
+\\ 2 - créer une fonction `souligne` qui toggle la classe `souligne` à `elem`
+\\ réponse
+function souligne() {
+  elem.classList.toggle(`souligne`);
+}
+
+\\ 3 - Ajouter un event listener sur le bouton `souligner` pour qu'au clic la fonction souligne soit appelée sur `elem`
+\\ réponse
+$('#u').on('click', souligne);
+
+\\ 4 - On ne va pas répéter ca 5 fois. Créer une fonction `toggle` qui prend un nom de classe comme paramètre et qui possède une unique instruction qui toggle cette classe sur notre `elem`
+\\ réponse
+function toggle( nom_classe ) {
+  elem.classList.toggle( nom_classe );
+}
+
+\\ 5 - En utilisant la classe précédente, associez maintenant les toggle de classe `gras`, `italic`, `rouge`, `invisible` à leur bouton respectif
+\\ Note ÷ utilisez les arrow function ÷ ` () => `
+\\ réponse
+$('#b').on('click', () => toggle('gras'));
+$('#i').on('click', () => toggle('italic'));
+$('#r').on('click', () => toggle('rouge'));
+$('#h').on('click', () => toggle('invisible'));
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js6-tp-3?file=script.js&devtoolsheight=80">
         <span class="cours_label">Cours </span>TP3 - traducteur alsacien</a>
