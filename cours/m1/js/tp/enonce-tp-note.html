@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Sup De Web - Supports de cours</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://designmodo.github.io/Flat-UI/dist/css/flat-ui.css">
+  <link rel="stylesheet" href="https://davidbabel.github.io/cours/styles.css">
+</head>
+
+
+
+<body>
+
+
+<a href="../index.html" class="btn btn-lg btn-primary back">Retour</a>
+
+
+
+<div class="ennonce">
+
+  <h2 class="text-center">TP noté : Coder une calculatrice en JavaScript</h2>
+  <p class="instructions">
+    Durée: 3-4h
+    <br> Cours et TP corrigés autorisés :
+    <a target="_blank" href="https://davidbabel.github.io/">https://davidbabel.github.io/</a>
+    <br> Internet autorisé, documentation etc.
+    <br> Réseaux sociaux et chats
+    <u>interdits</u>
+    <br> Collaboration interdite</p><br>
+
+  <p class="text-center">
+    <img style="max-width: 400px;" src="./calc.png" alt="calculatrice cassé ?">
+  </p>
+
+  <h3>Préambule</h3>
+
+  <p style="color:red;">Attention à bien être connécté sur <b>VOTRE</b> compte Stackblitz. Sinon vous allez mutuellement écraser votre travail.</p>
+
+  <p>Le TP terminé doit être envoyé en
+  <b>zip</b> (export zip dans Stackblitz) via
+  <b>
+    <a href="https://www.dropbox.com/request/g9XwmhCCoWCa0qQejLuM" target="_blank">cette adresse</a>. Mettez bien vos noms et prénoms
+  </b>
+  </p>
+
+  <p>N'hésitez pas à poser des questions, je ne vous donnerez pas la réponse mais je vous direz vos erreurs.</p>
+  <p>Si vous ne savez pas écrire une fonction, ce n'est pas que c'est difficile, c'est que vous n'avez pas travaillé.</p>
+  <p>Le meilleur moyen de trouver le comportement attendu par votre calculatrice, c'est d'ouvrir la calculatrice de windows et de voir comment elle se comporte.</p>
+
+  <h3>Ennoncé</h3>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;
+    <b>Il est fortement recommandé de lire cet énnoncé et les astuces intégralement avant de vous lancer</b>
+  </p>
+  <h4>Barème de points:</h4>
+  <p>
+    - A mesure que l'exercice avance, votre code est testé par codepen et vous donne directement votre note.
+    <br>
+    <div class="text-center">
+      <img src="./note.png" alt="">
+    </div>
+    <br> - TP non rendu dans les temps: -5 points
+    <br> - Intéraction avec un autre élève: -1 point chacun par intéraction
+    <br> - Triche: 0 et exclusion
+  </p>
+  <h4>Remarques:</h4>
+  <p>- Le code HTML ne doit pas être modifié.
+    <br> - Le code CSS ne doit pas être modifié.
+    <br> - Vous pouvez utiliser
+    <code>$</code> pour selectionner plusieurs éléments à la fois
+    <br> - Vous pouvez utiliser
+    <code>on</code> sur plusieurs éléments HTML à la fois
+    <br> - Vous pouvez à tout moment tester votre code en cliquant sur le bouton "Afficher debug". Les nouveaux boutons qui s'affichent
+    alors appellent des tests sur vos fonctions avec des paramètres prédéfinis. Si il y a des erreurs, un message s'affichera
+    dans la console.
+    <br> Vous pouvez également consulter et modifier l'état de vos variables principales directement depuis les champs de texte
+    :
+    <div class="text-center">
+      <img src="./variables.png" alt="">
+    </div>
+  </p>
+
+  <h4>Objectifs:</h4>
+  <p>Vous disposez de 3 variables globales. Nous allons les utiliser pour stocker les nombres saisis sur la calculatrice.
+    <br> Notre calculatrice ne sais faire que des opérations simple avec deux
+    <a target="_blank" href="https://fr.wikipedia.org/wiki/Op%C3%A9rande">opérandes</a> et un
+    <a target="_blank" href="https://fr.wikipedia.org/wiki/Op%C3%A9rateur_(symbole)">opérateur</a>. ( 3 + 5 = 8 )
+    <br> Ces variables vont donc stocker les éléments de notre opération à savoir: le membre de droite dans
+    <code>operande_1</code>, le membre de gauche dans
+    <code>operande_2</code> et le symbole d'opération dans
+    <code>operateur</code>
+    <div class="text-center">
+      <img src="./operandes.png" alt="">
+    </div>
+    <br> Dans cet exercice on ne va stocker que des chaînes de caractère, et pas des nombres, pour simplifier le travail. Donc
+    <code>operande_1</code>, <code>operande_2</code> et <code>operateur</code> sont des chaines de caractères.
+  </p>
+
+  <p>Le Stackblitz du TP est disponible à cette adresse <a target="_blank" href="../index.html">sur le cours</a>.
+
+  </p>
+
+  <h4>Astuces:</h4>
+  <p>
+    <span class="astuce">astuce 1:</span> Pensez à réutiliser vos fonctions.
+    <br>
+    <span class="astuce">astuce 2:</span> Si vous faites une erreur dans votre JavaScript, toute la suite du code ne seras pas interprétée.
+    <br>
+    <span class="astuce">astuce 3:</span> on utilise pas d'accent dans les noms de nos variables ou de fonctions.
+    <br>
+    <span class="astuce">astuce 4:</span> Dans les fonctions appellées au click, la variable
+    <code>this</code> contient l'element HTML qui a été cliqué, comme si vous l'aviez séléctionné avec
+    <code>$</code>.
+    <br>
+  </p>
+
+  <h4>Au boulot:</h4>
+
+  <p>1 - Ecrire la fonction
+    <code>afficher_resultat</code>, elle sera utilisée pour mettre à jour l'affichage de la calculatrice, on l'utilisera dans la suite de l'exercice :
+    <br> -
+    <b>Paramètres:</b> Elle prend un seul paramètre de type
+    <i>chaine de caractère</i>
+    <br> -
+    <b>Retour:</b> Elle ne retourne rien
+    <br> -
+    <b>Traitement:</b> Cette fonction affiche le contenu de la variable passée en paramètre dans le champ HTML qui possède l'identifiant
+    <b>"result"</b>
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "afficher_resultat()" et ouvrez la console pour voir si tout est ok.
+  </p>
+
+  <p>2 - PLus tard on va modifier les variables de notre calculatrice pour les utiliser lors de calculs. On veut être capable à tout moment, de revenir à l'état initial de notre calculatrice.<br>
+    Ecrire la fonction
+    <code>reset</code>, elle sera utilisée pour remettre à zéro l'état de la calculatrice, à la fois son affichage et sa mémoire, on l'utilisera dans la suite de l'exercice :
+    <br> -
+    <b>Astuce:</b> Pensez à réutiliser les fonctions précédentes, ça vous rapportera des points. Cette astuce est valable pour toute la suite de l'exercice.
+    <br> -
+    <b>Paramètres:</b> Elle ne prend aucun paramètre
+    <br> -
+    <b>Retour:</b> Elle ne retourne rien
+    <br> -
+    <b>Traitement:</b> Cette fonction met une chaine de caractère
+    <b>vide</b> dans nos variables <code>operande_1</code>, <code>operande_2</code> et <code>operateur</code> et remet à
+    <b>0</b> l'affichage du résultat
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "reset()" et ouvrez la console pour voir si tout est ok. Pour l'instant c'est
+    votre seul moyen de tester mais patience
+  </p>
+
+  <p>3 - Associer votre fonction
+    <code>reset</code> au clic sur le bouton "c" de la calculatrice. Examinez le code HTML de la page pour trouver cet élément HTML et le cibler
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton de debug "test click reset()" et ouvrez la console pour voir si tout est ok.
+    <br> Vous pouvez également saisir des valeurs pour vos variables dans le debug et vérifier qu'elle s'effacent bien quand
+    vous cliquez sur "c"
+  </p>
+
+  <p>4 - Ecrire la fonction
+    <code>get_operateur</code>, elle sera utilisée pour stocker l'opérateur saisie dans la variable "operateur", on l'associera ensuite au clic sur
+    les opérateurs:
+    <br> -
+    <b>Paramètres:</b> Elle ne prend aucun paramètre
+    <br> -
+    <b>Retour:</b> Elle ne retourne rien
+    <br> -
+    <b>Traitement:</b> Au clic sur un bouton opérateur "+" , "-", "/" ou "*", elle remplira la variable "opérateur" avec le symbole
+    correspondant. Dans cette fonction, la variable
+    <code>this</code> contient l'element HTML qui a été cliqué, comme si vous l'aviez séléctionné avec
+    <code>$</code>
+    <br> <b>Cette astuce vaudra pour toutes les questions qui suivent cet exercice.</b>
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "get_operateur()" et ouvrez la console pour voir si tout est ok. Pour l'instant
+    c'est votre seul moyen de tester mais patience
+  </p>
+
+  <p>5 - Associer votre fonction
+    <code>get_operateur</code> au clic sur les boutons "operateur" de la calculatrice. Examinez le HTML pour trouver ces éléments HTML et les cibler
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton de debug "test click get_operateur()" et ouvrez la console pour voir si tout est ok.
+    <br> Au clic sur les bontons opérateurs, le champs de debug "operateur" devrait maintenant être mis à jour à chaque fois.
+  </p>
+
+  <p>6 - Cette question rapporte le plus de point, mais c'est aussi celle où il faut réfléchir un peu
+    <br> Ecrire la fonction
+    <code>get_chiffre</code>, elle sera utilisée pour stocker les chiffres saisis sur la calculatrice, on l'associera au clic juste après:
+    <br> -
+    <b>Paramètres:</b> Elle ne prend aucun paramètre
+    <br> -
+    <b>Retour:</b> Elle ne retourne rien
+    <br> -
+    <b>Traitement:</b>
+    <br> Lorsqu'on appuie sur une touche chiffre, elle ajoutera le "chiffre" saisie à la suite de l'
+    <u>opérande en cours</u>.
+    <br> L'
+    <u>opérande en cours</u> dépend de la variable operateur :
+    <br> &nbsp;&nbsp;&nbsp;- Si la variable opérateur est vide, on ajoute la touche saisie à la suite de l'<code>operande_1</code>
+    <br> &nbsp;&nbsp;&nbsp;- Sinon, on ajoute la touche saisie à la suite l'<code>operande_2</code>
+    <br> C'est le comportement normal d'une calculatrice.
+    <br> Attention le contenu actuel de la variable operande ne doit pas être écrasé, on ajoute le nouveau chiffre à la droite
+    du précédent
+    <br> Pour finir, cette fonction met à jour l'affichage de l'écran de la calculatrice avec le contenu de l'opérande en cours
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "get_chiffre()" et ouvrez la console pour voir si tout est ok. Pour l'instant
+    c'est votre seul moyen de tester mais patience
+  </p>
+
+  <p>7 - Associer votre fonction
+    <code>get_chiffre</code> au clic sur les boutons "chiffre" de la calculatrice. Examinez le HTML pour trouver ces éléments HTML et les cibler
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton de debug "test click get_chiffre()" et ouvrez la console pour voir si tout est ok.
+    <br> A ce stade vous pouvez déjà tester que votre calculatrice rempli déjà correctement les opérandes et les opérateurs,
+    et se reset correctement
+  </p>
+
+  <p>8 - Ecrire la fonction <code>calculer</code>, elle sera utilisée pour effectuer le calcul avec l'operateur et les operandes courantes et retourner le resultat:<br>
+    <b>Attention :</b> Pensez à utiliser <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat" target="_blank">parseFloat()</a></code> sur vos opérandes pour faire des opérations avec des chiffres et non des chaines.<br>
+  - <b>Paramètres:</b> Elle ne prend aucun paramètre <br>
+  - <b>Retour:</b> le résultat du calcul <br>
+  - <b>Traitement:</b> Cette fonction n'affiche rien, suivant l'opérateur elle retourne le résultat de notre calcul courant<br>
+  On récupère alors le resultat du calcul dans une variable que l'on retourne.<br>
+  - <b>Tests et debug:</b> Cliquez sur le bouton "test calculer()" et ouvrez la console pour voir si tout est ok. Pour l'instant c'est votre seul moyen de tester mais patience
+  </p>
+
+  <p>9 - <!-- On vous offre la fonction
+    <code>calculer</code>, cette fonction renvoit le résultat du calcul de vos opérandes et de votre opérateur. Par exemple si <code>operande_1</code> vaut 3,
+    <code>operateur</code> vaut "+" et <code>operande_2</code> vaut 6, alors
+    <code>calculer()</code> renverra 9 <br> -->
+    Ecrire la fonction
+    <code>calculer_et_afficher</code>, elle sera utilisée pour lancer le calcul et mettre à jour l'interface et les variables de notre calculatrice:
+    <br> -
+    <b>Paramètres:</b> Elle ne prend aucun paramètre
+    <br> -
+    <b>Retour:</b> Elle ne retourne rien
+    <br> -
+    <b>Traitement:</b> Plus tard on associera cette fonction au clic sur "=", pour l'instant on utilisera les boutons de debug pour vérifier qu'elle fonctionne. On va donc reproduire le comportement d'une vrai calculatrice.
+    <br> D'abord elle affiche le resultat du calcul dans le champ HTML "result", je vous conseil de passer par une variable.
+    <br> On va ensuite nétoyer tous les champs.
+    <br> Puis notre fonction va stocker ce résultat dans l'<code>operande_1</code> pour qu'il soit directement réutilisable
+    <br> Attention à l'état de vos variables à la fin de l'execution de cette fonction, utilisez le debug pour savoir ce qui
+    est attendu et pensez à réutiliser vos fonctions
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "calculer_et_afficher()" et ouvrez la console pour voir si tout est ok. Pour
+    l'instant c'est votre seul moyen de tester mais patience
+  </p>
+
+  <p>10 - Associer votre fonction
+    <code>calculer_et_afficher</code> au clic sur le bouton "=" de la calculatrice. Examinez le HTML pour trouver cet élément HTML et le cibler
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton de debug "test click calculer_et_afficher()" et ouvrez la console pour voir si tout
+    est ok.
+    <br> A ce stade votre calculatrice fonctionne complétement. Mais il reste quelques défauts à corriger
+  </p>
+
+  <h4>Résoudre les problèmes:</h4>
+  <p>Dans les questions suivantes, on va parfois vouloir quitter la fonction quand une condition n'est pas remplie. Vous pouvez le faire en utilisant simplement un <code>return;</code> dans votre code à l'endroit où vous voulez quitter.</p>
+  <p>11 -
+    <b>Problème 1 :</b> On souhaite que le calcul se lance, même si on clic sur le bouton d'un opérateur au lieu du "=" quand toutes nos
+    variables sont remplies
+    <br> Exemple:
+    <br> J'appuis sur "3" puis "+" puis "3". Jusque là rien de fou, j'ai juste rempli mes 3 variables.
+    <br> J'appuis maintenant sur "-" (au lieu de "=") : je veux que le calcul se lance comme si j'avais cliqué sur "=", et que
+    l'opérateur stocké soit alors à "-"
+    <br> C'est le comportement classique attendu par une calculatrice.
+    <br> réécrire la fonction
+    <code>get_operateur</code> pour corriger ce problème.
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "get_operateur2()" et ouvrez la console pour voir si tout est ok.
+    <br> Essayez de reproduire le scénario saisie au dessus pour voir si tout fonctionne correctement.
+  </p>
+
+  <p>12 -
+    <b>Problème 2 :</b> Si mon <code>operande_1</code> est vide et que j'appuis directement sur un opérateur, je ne pourrais plus remplir
+    que l'<code>operande_2</code>
+    <br> Il faudrait que la saisie d'opérateur soit ignorée tant que l'<code>operande_1</code> est vide.
+    <br> Réécrire encore une fois la fonction
+    <code>get_operateur</code> pour corriger ce problème.
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "get_operateur3()" et ouvrez la console pour voir si tout est ok.
+  </p>
+
+  <p>13 -
+    <b>Problème 3 :</b> Si je clic sur le bouton "=" alors qu'une des deux operandes est manquante, le programme rate son calcul et affiche
+    "undefined" en resultat
+    <br> réécrire la fonction
+    <code>calculer_et_afficher</code> pour corriger ce problème.
+    <br> Si il manque une opérande ou l'opérateur, la function retourne "false" -
+    <b>Tests et debug:</b> Cliquez sur le bouton "calculer_et_afficher2()" et ouvrez la console pour voir si tout est ok.
+  </p>
+
+  <p>14 -
+    <b>Problème 4 :</b> Si je clic plusieurs fois sur le bouton de la virgule "." je crée un chiffre avec plusieurs virgules
+    <br> On est sympa on vous offre la fonction suivante :
+    <code>possede_virgule(chaine)</code>
+    <br> C'est fonction renvoie un booleen:
+    <br> &nbsp;&nbsp;&nbsp;-
+    <b>true</b> si la chaine passée en paramètre possède une virgule
+    <br> &nbsp;&nbsp;&nbsp;-
+    <b>false</b> si la chaine passée en paramètre ne possède pas de virgule
+    <br> réécrire la fonction
+    <code>get_chiffre</code> en utilisant cette fonction pour corriger le problème initial.
+    <br> -
+    <b>Tests et debug:</b> Cliquez sur le bouton "get_chiffre2()" et ouvrez la console pour voir si tout est ok.
+  </p>
+
+  <p>
+    <b>RENDU -</b> Le TP terminé doit être envoyé en
+    <b>zip</b> via
+    <b><a href="https://www.dropbox.com/request/g9XwmhCCoWCa0qQejLuM" target="_blank">cette adresse</a></b>
+    <br> Vérifier avec le professeur qu'il a bien été reçu, un TP non reçu à temps sera sanctionné
+  </p>
+
+  <p>Bonus - Si le programme affiche 20 / 20 et que vous trouvez un bug je vous paie une bière.
+  </p>
+
+  <p>
+    <b>Bon courage</b>
+  </p>
+</div>
+
+<footer>
+  -
+  <a target="_blank" href="https://www.linkedin.com/in/david-babel">David Babel </a> -
+  <a href="mailto:babel.david@gmail.com">Contact</a> -
+  <a>2018/2019</a> -
+</footer>
+<div id="hidden-clicks"></div>
+<script src="https://davidbabel.github.io/cours/script.js"></script>
+</body>
+</html>
