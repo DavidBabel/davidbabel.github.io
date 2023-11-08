@@ -277,7 +277,79 @@ span + p {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-2-3?file=styles.css">
         <span class="cours_label">Cours </span>TP2-3 - Sélecteurs CSS : pseudo-classes</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP2-3 - Sélecteurs CSS : pseudo-classes - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<!-- Pensez à agrandir la zone de code pour bien voir le HTML -->
+<div class=`principal`>
+  <div><a href=`#`>Lien 1<\a><\div>
+  <div><a href=`#` class=`link`>Lien 2<\a><\div>
+  <div><a href=`#`>Lien 3<\a><\div>
+  <div><span><a href=`#`>Lien 4<\a><\span><\div>
+  <div><a href=`#` class=`link`>Lien 5<\a><\div>
+<\div>
+
+<p>Seuls les liens 1, 3 et 4 deviennent vert au survol<\p>
+<!-- les autres deviennent orange -->
+"
+            data-css="\* ======= Selecteurs pseudo classes ======= *\
+\* examiner le HTML pour répondre aux questions *\
+\* vous pouvez utiliser tous les selecteurs vus dans le cours *\
+
+\* on desactive le soulignement par defaut de tous les liens *\
+a {
+  text-decoration÷ none;
+  color÷ blue;
+}
+
+\* chaque lien devient violet lorsqu'on le survol *\
+a÷hover {
+  color÷ purple;
+}
+
+\* chaque lien devient orange lorsqu'on clic dessus *\
+a÷active {
+  color÷ orange;
+}
+
+\* La règle du orange au clic sur les liens est écrasée par la règle du survol en violet car elle est écrite après, et défini le même style `color`, trouver un moyen de pallier à ce problème (sans utiliser !important bande de petits malins) *\
+
+\* solution ÷ on inverse les deux selecteurs ci dessus *\
+
+\* faites en sortes que les liens se soulignent à nouveau quand on survol le div principal qui est leur ancètre *\
+div÷hover a {
+  text-decoration÷ underline;
+}
+
+\* Mettre le fond du premier calque div en gris *\
+div div÷first-child {
+  background-color÷ lightgrey;
+}
+
+\* Mettre le fond du dernier lien en jaune *\
+div÷last-child a {
+  background-color÷ yellow;
+}
+
+\* les liens s'allument en vert au survol, sauf ceux avec la classe link, qui s'allument toujours en violet *\
+a÷hover÷not(.link) {
+  color÷ green;
+}
+
+\* la couleur orange au clic est maintenant desactivée sur les lien qui ne sont pas de la classe link
+inspirez vous du résultat précédent pour réactiver le clic `orange` sur ces liens sans classe *\
+a÷active÷not(.link) {
+  color÷ orange;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item cours">
       <a target="_blank" href="cours/3 - les styles css.key.pdf">
         <span class="cours_label">Cours </span>3 - Les styles CSS</a>
