@@ -400,17 +400,94 @@ console.log(semaine);
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js2-tp-2-2?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP2-2 - Les tableaux 2</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP2-2 - Les tableaux 2 - Corrigé"
+            data-description=""
+            data-html=""
+            data-js="\\ Créer un Array vide appelé `prenoms`
+const prenoms = [];
+
+\\ Ajoutez y l’ensemble de vos prénoms, si vous n’en avait qu’un, inventez vous une vie jusqu’à en avoir 3 ou 4
+prenoms.push(`David`);
+prenoms.push(`Nicolas`, `Sébastien`);
+
+\\ Afficher la taille du tableau
+console.log( prenoms.length );
+
+\\ Vérifiez que le tableau contient bien votre prénom principal
+console.log( prenoms.includes(`David`) );
+
+\\ Modifiez votre prénom principal par « Anonyme »
+prenoms[0] = `Anonyme`;
+
+\\ Afficher le tableau final
+console.log(prenoms)
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js2-tp-2-3?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP2-3 - Les tableaux 3</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP2-3 - Les tableaux 3 - Corrigé"
+            data-description=""
+            data-html=""
+            data-js="\\ Faire un programme qui prend un unique Number en paramètre
+const nb = 3;
+
+\\ Créer un Array nommé tabChiffre contenant tous les chiffres de 1 à 5.
+var tabChiffre = [1, 2, 3, 4, 5];
+
+\\ Ajouter le Number passé en paramètre à la fin de votre tableau
+tabChiffre.push(nb);
+
+\\ Retirer le Number 3 du tableau à l’index 2
+tabChiffre.splice(2,1);
+
+\\ Appliquer un x3 sur chaque Number restant du tableau
+tabChiffre[1] = tabChiffre[1] * 3;
+tabChiffre[2] = tabChiffre[2] * 3;
+tabChiffre[3] = tabChiffre[3] * 3;
+tabChiffre[4] = tabChiffre[4] * 3;
+
+\\ Tester (et afficher) si la valeur 9 existe dans le Array.
+console.log( tabChiffre.includes(9) );
+
+\\ Tester (et afficher) si la valeur 6 existe dans le Array.
+console.log( tabChiffre.includes(6) );
+
+\\ Tester (et afficher) si l’index 6 existe dans votre Array.
+console.log( Boolean(tabChiffre[6]) );
+
+\\ Afficher la taille de votre Array
+console.log( tabChiffre.length );
+
+\\ Afficher maintenant le Array final
+console.log( tabChiffre );
+
+\\ Tester votre programme avec le paramètre 3, 6 et 12
+\\ (en modifiant le paramètre d'entrée de votre programme)
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item cours">
-    <a href="#"><span class="cours_label">Cours </span>4 - Structures conditionnelles et itératives</a>
-  </li>
+      <a target="_blank" href="cours/4 - structures conditionnelles et iteratives.key.pdf">
+        <span class="cours_label">Cours </span>4 - Structures conditionnelles et itératives</a>
+                      </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP1-1 - structure conditionnelle - si / alors</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js3-tp-1-1?file=script.js&devtoolsheight=100">
+        <span class="cours_label">Cours </span>TP1-1 - structure conditionnelle - si / alors</a>
+                      </li>
   <li class="list-group-item tp">
     <a href="#"><span class="cours_label">Cours </span>TP1-2 - structure conditionnelle - si / alors / sinon</a>
   </li>
