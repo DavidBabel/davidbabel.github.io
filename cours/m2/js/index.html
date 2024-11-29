@@ -1054,13 +1054,74 @@ test_est_divisible_par();
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js5-tp-1?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP1 - manipuler les objets</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP1 - manipuler les objets - Corrigé"
+            data-description=""
+            data-html=""
+            data-js="\\ voilà un objet un peu complexe
+var terre = {
+  amerique: {
+    usa: {
+      president: `D. Trump`
+    },
+    mexique: {
+      president: `Enrique Peña Nieto`
+    }
+  },
+  europe: {
+    france: {
+      president: `E. Macron`,
+      departements: {
+        ardennes: 08,
+        marne: 51,
+        aube: 10,
+        `bas-rhin`: 67,
+        `haut-rhin`: 68
+      }
+    },
+    allemagne: {
+      president: `Joachim Gauck`,
+    }
+  }
+};
+
+\\ 1. affichez le nom du président des états unis
+console.log( terre.amerique.usa.president );
+
+\\ 2. affichez le nom du président de la france
+console.log( terre.europe.france.president );
+
+\\ 3. affichez la liste des départements de la france
+console.log( terre.europe.france.departements );
+
+\\ 4. affichez le numero de département du bas-rhin
+console.log( terre.europe.france.departements[`bas-rhin`] );
+
+\\ 5. remplacer le nom du président allemand par l'actuel puis l'afficher via l'objet
+terre.europe.allemagne.president = `Frank-Walter Steinmeier`;
+console.log( terre.europe.allemagne.president );
+
+\\ 6. creer un objet qui contient votre nom et votre prenom
+var personne = {
+  nom: 'Babel',
+  prenom: 'David',
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item cours">
-    <a href="#"><span class="cours_label">Cours </span>7 - JavaScript dans le web</a>
-  </li>
+      <a target="_blank" href="cours/7 - javascript dans le web.key.pdf">
+        <span class="cours_label">Cours </span>7 - JavaScript dans le web</a>
+                      </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP1 - modifier le HTML</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-1?file=script.js&devtoolsheight=70">
+        <span class="cours_label">Cours </span>TP1 - modifier le HTML</a>
+                      </li>
   <li class="list-group-item tp">
     <a href="#"><span class="cours_label">Cours </span>TP2 - HTML / JS / CSS</a>
   </li>
