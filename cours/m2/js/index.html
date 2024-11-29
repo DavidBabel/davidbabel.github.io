@@ -876,15 +876,173 @@ for (var i = 0; i < tableauNombres.length; i = i + 1 ) {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-1?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP1 - jouer avec les fonctions</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP1 - jouer avec les fonctions - Corrigé"
+            data-description=""
+            data-html="<script>
+  console.clear();
+  function test_double() {
+    if ( double( 7 ) == 14 && double( 14 ) == 28 ) {
+      console.log('tu as réussi le 1 !');
+    } else {
+      console.log('le 1 ne fonctionne pas encore, double de 7 renvoit '+double(7));
+    }
+  }
+
+  function test_carre() {
+    if ( !est_carre_de( 7 , 14 ) && est_carre_de( 7 , 49 ) ) {
+      console.log( 'ta fonction est_carre_de fonctionne' );
+    } else {
+      console.log('ta fonction est_carre_de ne fonctionne pas');
+    }
+  }
+</script>
+"
+            data-js="\\ 1. écrire la function `double` qui double la valeur d'un nombre
+function double ( nombre )
+{
+  return nombre * 2;
+}
+
+\\ si vous réussissez, le code suivant affichera `ok` dans la console
+test_double();
+
+\\ 2. écrire la function `carre` qui renvois le carre d'un nombre
+function carre( nombre )
+{
+  return nombre * nombre;
+}
+
+\\ petite aide pour vérifier dans la console que ca marche
+\\ doit afficher 49
+console.log( carre( 7 ) );
+
+\\ 3. écrire la function `est_carre_de` qui prend deux paramètres nombres
+\\     La fonction renvoit true si le deuxième nombre est le carre du premier
+\\     La fonction renvoit faux sinon
+function est_carre_de( nombre_1, nombre_2 )
+{
+  if( carre(nombre_1) == nombre_2 )
+  {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+\\ si vous réussissez, le code suivant affichera ok dans la console
+test_carre();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-2?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP2 - la fonction existe</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP2 - la fonction existe - Corrigé"
+            data-description=""
+            data-html="<script>
+  function test_existe() {
+    if (typeof existe !== 'undefined') {
+      if (false !== existe()) {
+        console.log('Error÷ ne pas passer devrait retourner faux');
+        return;
+      }
+      if (true !== existe(5)) {
+        console.log('Error÷ une valeur entière positive devrait exister');
+        return;
+      }
+      var toto;
+      if (false !== existe(toto)) {
+        console.log('Error÷ une variable vide ne devrait pas exister');
+        return;
+      }
+      if (true !== existe(`anything`)) {
+        console.log('Error÷ une chaine devrait exister');
+        return;
+      }
+      console.log('la fonction existe marche correctement');
+    } else {
+      console.log('la fonction n‘a pas encore été écrite');
+    }
+  }
+<\script>
+"
+            data-js="\\ faire une fonction “existe“ qui prend un paramètre et test si il existe et si sa valeur n'est pas falseable
+
+function existe (variable) {
+  return Boolean(variable);
+}
+
+\\ vous pouvez écrire ici des console.log pour débugger votre code
+\\ essayer avec 50, 0, ``, `test`
+
+\\ cette fonction va tester que votre fonction marche bien
+test_existe();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-3?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP3 - la fonction divisible</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js-console"
+            data-show-prompt=""
+            data-title="TP3 - la fonction divisible - Corrigé"
+            data-description=""
+            data-html="<script>
+  function test_est_divisible_par() {
+    if (typeof est_divisible_par !== 'undefined') {
+      if (false !== est_divisible_par(null, 0)) {
+        console.log('Error: la division par 0 devrait retourner false');
+        return;
+      }
+      if (true !== est_divisible_par(5, 1)) {
+        console.log('Error: la division par 1 devrait retourner vrai');
+        return;
+      }
+      if (true !== est_divisible_par(9, 3)) {
+        console.log('Error: 9 devrait être divisible par 3');
+        return;
+      }
+      if (false !== est_divisible_par(9, 4)) {
+        console.log('Error: 9 devrait pas être divisible par 3');
+        return;
+      }
+      console.log('la fonction est_divisible_par marche correctement');
+    } else {
+      console.log('la fonction n‘a pas encore été écrite');
+    }
+  }
+</script>
+"
+            data-js="\\ faire une fonction est_divisible_par qui prend deux nombre et renvoie si le premier est divisible par le second
+
+function est_divisible_par (a, b) {
+  return a % b === 0;
+}
+
+\\ vous pouvez écrire ici des console.log pour débugger votre code
+
+\\ cette fonction va tester que votre fonction marche bien
+test_est_divisible_par();
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js4-tp-4?file=script.js&devtoolsheight=100">
         <span class="cours_label">Cours </span>TP4 - trouver les diviseurs</a>
