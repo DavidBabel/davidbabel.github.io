@@ -1121,49 +1121,894 @@ var personne = {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/js6-tp-1?file=script.js&devtoolsheight=70">
         <span class="cours_label">Cours </span>TP1 - modifier le HTML</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP1 - modifier le HTML - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<div class`container`>
+  <span id=`calque`>Voici un </span>
+  <a href=`http://google.fr` target=`_blank`>
+    Lien vers google
+  </a><br>
+  <input type=`text` value=`55` class=`champ` />
+</div>
+"
+            data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Vous avez du contenu HTML dans votre page
+
+\\ 1 - modifier le contenu du span pour afficher le texte `Voilà un`
+\\ réponse
+$('#calque').innerHTML = 'Voilà un';
+
+\\ 2 - modifier le lien pour qu'il pointe vers `http:\\yahoo.fr`
+\\ Vous pouvez tester en cliquant dessus
+\\ réponse
+$('a').setAttribute('href', 'http:\\yahoo.fr');
+
+\\ 3 - modifier le texte du liens pour écrire `lien vers yahoo`
+\\ réponse
+$('a').innerHTML = 'lien vers yahoo';
+
+\\ 4 - Récupérer et afficher la valeur du `champ` dans la console
+\\ réponse
+console.log( $('.champ').value );
+
+\\ 5 - Modifier la valeur du champ par 90
+\\ réponse
+$('.champ').value = 90;
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP2 - HTML / JS / CSS</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-2?file=script.js&devtoolsheight=70">
+        <span class="cours_label">Cours </span>TP2 - HTML / JS / CSS</a>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP2 - HTML / JS / CSS - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne modifiez pas le HTML -->
+<div>Mon calque magique<\div>
+<br \>
+<button id=`u`>souligner<\button>
+<button id=`b`>gras<\button>
+<button id=`i`>italic<\button>
+<button id=`r`>rouge<\button>
+<button id=`h`>masquer\afficher<\button>
+"
+            data-css="\* Vous ne modifiez pas le CSS *\
+.souligne {
+  text-decoration÷ underline;
+}
+
+.gras {
+  font-weight÷ bold;
+}
+
+.italic {
+  font-style÷ italic;
+}
+
+.rouge {
+  color÷ red;
+}
+
+.invisible {
+  display÷ none;
+}
+
+div {
+  margin÷ 10px;
+}
+"
+            data-js="\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - créez une variable `elem` qui contient votre element div
+\\ réponse
+var elem = $('div');
+
+\\ 2 - créer une fonction `souligne` qui toggle la classe `souligne` à `elem`
+\\ réponse
+function souligne() {
+  elem.classList.toggle(`souligne`);
+}
+
+\\ 3 - Ajouter un event listener sur le bouton `souligner` pour qu'au clic la fonction souligne soit appelée sur `elem`
+\\ réponse
+$('#u').on('click', souligne);
+
+\\ 4 - On ne va pas répéter ca 5 fois. Créer une fonction `toggle` qui prend un nom de classe comme paramètre et qui possède une unique instruction qui toggle cette classe sur notre `elem`
+\\ réponse
+function toggle( nom_classe ) {
+  elem.classList.toggle( nom_classe );
+}
+
+\\ 5 - En utilisant la classe précédente, associez maintenant les toggle de classe `gras`, `italic`, `rouge`, `invisible` à leur bouton respectif
+\\ Note ÷ utilisez les arrow function ÷ ` () => `
+\\ réponse
+$('#b').on('click', () => toggle('gras'));
+$('#i').on('click', () => toggle('italic'));
+$('#r').on('click', () => toggle('rouge'));
+$('#h').on('click', () => toggle('invisible'));
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP2 - HTML / JS / CSS (backup si ça marche pas)</a>
-  </li>
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP2 - HTML / JS / CSS (backup si ça marche pas)"
+        data-description=""
+        data-html="<!-- Vous ne modifiez pas le HTML -->
+<div>Mon calque magique<\div>
+<br \>
+<button id=`u`>souligner<\button>
+<button id=`b`>gras<\button>
+<button id=`i`>italic<\button>
+<button id=`r`>rouge<\button>
+<button id=`h`>masquer\afficher<\button>
+"
+        data-css="\* Vous ne modifiez pas le CSS *\
+.souligne {
+  text-decoration÷ underline;
+}
+
+.gras {
+  font-weight÷ bold;
+}
+
+.italic {
+  font-style÷ italic;
+}
+
+.rouge {
+  color÷ red;
+}
+
+.invisible {
+  display÷ none;
+}
+
+div {
+  margin÷ 10px;
+}
+"
+        data-js="\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - créez une variable `elem` qui contient votre element div
+\\ réponse
+
+
+\\ 2 - créer une fonction `souligne` qui toggle la classe `souligne` à `elem`
+\\ réponse
+
+
+\\ 3 - Ajouter un event listener sur le bouton `souligner` pour qu'au clic la fonction souligne soit appelée sur `elem`
+\\ réponse
+
+
+\\ 4 - On ne va pas répéter ca 5 fois. Créer une fonction `toggle` qui prend un nom de classe comme paramètre et qui possède une unique instruction qui toggle cette classe sur notre `elem`
+\\ réponse
+
+
+\\ 5 - En utilisant la classe précédente, associez maintenant les toggle de classe `gras`, `italic`, `rouge`, `invisible` à leur bouton respectif
+\\ Note ÷ utilisez les arrow function ÷ ` () => `
+\\ réponse
+"
+        onclick="return openInCodepen(this);">
+        TP2 - HTML / JS / CSS (backup si ça marche pas)
+      </a>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP2 - HTML / JS / CSS (backup si ça marche pas) - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne modifiez pas le HTML -->
+<div>Mon calque magique<\div>
+<br \>
+<button id=`u`>souligner<\button>
+<button id=`b`>gras<\button>
+<button id=`i`>italic<\button>
+<button id=`r`>rouge<\button>
+<button id=`h`>masquer\afficher<\button>
+"
+        data-css="\* Vous ne modifiez pas le CSS *\
+.souligne {
+  text-decoration÷ underline;
+}
+
+.gras {
+  font-weight÷ bold;
+}
+
+.italic {
+  font-style÷ italic;
+}
+
+.rouge {
+  color÷ red;
+}
+
+.invisible {
+  display÷ none;
+}
+
+div {
+  margin÷ 10px;
+}
+"
+        data-js="\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - créez une variable `elem` qui contient votre element div
+\\ réponse
+var elem = $('div');
+
+\\ 2 - créer une fonction `souligne` qui toggle la classe `souligne` à `elem`
+\\ réponse
+function souligne() {
+  elem.classList.toggle(`souligne`);
+}
+
+\\ 3 - Ajouter un event listener sur le bouton `souligner` pour qu'au clic la fonction souligne soit appelée sur `elem`
+\\ réponse
+$('#u').on('click', souligne);
+
+\\ 4 - On ne va pas répéter ca 5 fois. Créer une fonction `toggle` qui prend un nom de classe comme paramètre et qui possède une unique instruction qui toggle cette classe sur notre `elem`
+\\ réponse
+function toggle( nom_classe ) {
+  elem.classList.toggle( nom_classe );
+}
+
+\\ 5 - En utilisant la classe précédente, associez maintenant les toggle de classe `gras`, `italic`, `rouge`, `invisible` à leur bouton respectif
+\\ Note ÷ utilisez les arrow function ÷ ` () => `
+\\ réponse
+$('#b').on('click', () => toggle('gras'));
+$('#i').on('click', () => toggle('italic'));
+$('#r').on('click', () => toggle('rouge'));
+$('#h').on('click', () => toggle('invisible'));
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP3 - traducteur alsacien</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-3?file=script.js&devtoolsheight=70">
+        <span class="cours_label">Cours </span>TP3 - traducteur alsacien</a>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP3 - traducteur alsacien - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<textarea id=`source` cols=`60` rows=`10`>
+
+<\textarea>
+<textarea id=`destination` cols=`60` rows=`10` readonly=`readonly`>
+
+<\textarea>
+<button onclick=`copy_alsacien_text()`>
+  Tester ma fonction
+<\button>
+"
+            data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ on a une fonction qui permet de transformer du texte en alsacien
+function clean( texte ) {
+  return texte
+    .replace(\r\g,'rr').replace(\R\g,'Rr')
+    .replace(\d\g,'t').replace(\D\g,'T')
+    .replace(\v\g,'f').replace(\V\g,'F')
+    .replace(\j\g,'ch').replace(\J\g,'Ch');
+}
+
+\\ le but de cet exercice est de taper du texte dans le champ de source de gauche
+\\ et que ce texte apparaisse `alsacisé` dans le champ de droite
+
+\\ 1 - écrire une fonction `copy_alsacien_text` qui ne prend aucun paramètre et ne retourne rien
+\\ Cette fonction permet de mettre à jour la liste de droite avec le contenu alsacisé de la liste de gauche
+\\ Vous pouvez tester votre fonction en écrivant du texte à gauche et en cliquant sur le bouton
+\\ réponse
+function copy_clean_text() {
+  $('#destination').value = clean( $('#source').value );
+}
+
+\\ 2 - tester de taper la chaine `Je vais te dire mon identité` et appuyez sur le bouton
+\\ ce bouton devrait vous aider à travailler votre accent
+
+
+\\ 3 - On souhaite maintenant que le texte alsacisé s'affiche en live
+\\     pour se faire on va ajouter un écouteur d'évenement de type `input`
+\\ réponse
+$('#source').on('input', copy_clean_text);
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP3 - traducteur alsacien (backup si ça marche pas)</a>
-  </li>
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP3 - traducteur alsacien (backup si ça marche pas)"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<textarea id=`source` cols=`60` rows=`10`>
+
+<\textarea>
+<textarea id=`destination` cols=`60` rows=`10` readonly=`readonly`>
+
+<\textarea>
+<button onclick=`copy_alsacien_text()`>
+  Tester ma fonction
+<\button>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ on a une fonction qui permet de transformer du texte en alsacien
+function clean( texte ) {
+  return texte
+    .replace(\r\g,'rr').replace(\R\g,'Rr')
+    .replace(\d\g,'t').replace(\D\g,'T')
+    .replace(\v\g,'f').replace(\V\g,'F')
+    .replace(\j\g,'ch').replace(\J\g,'Ch');
+}
+
+\\ le but de cet exercice est de taper du texte dans le champ de source de gauche
+\\ et que ce texte apparaisse `alsacisé` dans le champ de droite
+
+\\ 1 - écrire une fonction `copy_alsacien_text` qui ne prend aucun paramètre et ne retourne rien
+\\ Cette fonction permet de mettre à jour la liste de droite avec le contenu alsacisé de la liste de gauche
+\\ Vous pouvez tester votre fonction en écrivant du texte à gauche et en cliquant sur le bouton
+\\ réponse
+
+
+\\ 2 - tester de taper la chaine `Je vais te dire mon identité` et appuyez sur le bouton
+\\ ce bouton devrait vous aider à travailler votre accent
+
+
+\\ 3 - On souhaite maintenant que le texte alsacisé s'affiche en live
+\\     pour se faire on va ajouter un écouteur d'évenement de type `input`
+\\ réponse
+"
+        onclick="return openInCodepen(this);">
+        TP3 - traducteur alsacien (backup si ça marche pas)
+      </a>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP3 - traducteur alsacien (backup si ça marche pas) - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<textarea id=`source` cols=`60` rows=`10`>
+
+<\textarea>
+<textarea id=`destination` cols=`60` rows=`10` readonly=`readonly`>
+
+<\textarea>
+<button onclick=`copy_alsacien_text()`>
+  Tester ma fonction
+<\button>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ on a une fonction qui permet de transformer du texte en alsacien
+function clean( texte ) {
+  return texte
+    .replace(\r\g,'rr').replace(\R\g,'Rr')
+    .replace(\d\g,'t').replace(\D\g,'T')
+    .replace(\v\g,'f').replace(\V\g,'F')
+    .replace(\j\g,'ch').replace(\J\g,'Ch');
+}
+
+\\ le but de cet exercice est de taper du texte dans le champ de source de gauche
+\\ et que ce texte apparaisse `alsacisé` dans le champ de droite
+
+\\ 1 - écrire une fonction `copy_alsacien_text` qui ne prend aucun paramètre et ne retourne rien
+\\ Cette fonction permet de mettre à jour la liste de droite avec le contenu alsacisé de la liste de gauche
+\\ Vous pouvez tester votre fonction en écrivant du texte à gauche et en cliquant sur le bouton
+\\ réponse
+function copy_clean_text() {
+  $('#destination').value = clean( $('#source').value );
+}
+
+\\ 2 - tester de taper la chaine `Je vais te dire mon identité` et appuyez sur le bouton
+\\ ce bouton devrait vous aider à travailler votre accent
+
+
+\\ 3 - On souhaite maintenant que le texte alsacisé s'affiche en live
+\\     pour se faire on va ajouter un écouteur d'évenement de type `input`
+\\ réponse
+$('#source').on('input', copy_clean_text);
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP4 - jouer avec JavaScript</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-4?file=script.js&devtoolsheight=70">
+        <span class="cours_label">Cours </span>TP4 - jouer avec JavaScript</a>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP4 - jouer avec JavaScript - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+<label for=`nombre`>Table des<\label>
+<input id=`nombre`
+      type=`number`
+      value=`4`
+      placeholder=`Saisir un chiffre` \>
+<button onclick=`calcul()`>
+  test
+<\button><br>
+<textarea id=`result`
+          cols=`40`
+          rows=`16`
+          readonly=`readonly`>
+<\textarea>
+…………………………………………………………………………………………………………………………
+<script>
+  function test_multiplication () {
+    if( multiplication( 4 , 5 ) === `4 x 5 = 20§§` ) {
+      console.log(`Bien joué ta fonction à l'air de marcher`)
+    } else {
+      console.log(`Désolé, multiplication( 4 , 5 ) retourne `,multiplication( 4 , 5 ), `et devrait retourner '4 x 5 = 20§§'`);
+    }
+  }
+<\script>
+"
+            data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Le but de ce TP est d'afficher une table de multiplication à partir d'un nombre passé en paramètre
+
+\\ 1 - Commencez par écrire une fonction `multiplication`
+\\ Elle prend deux paramètres et retourne une chaine (string)
+\\ tel que si j'appelle la fonction `multiplication( 4 , 5 )`
+\\ elle retourne la chaine `4 x 5 = 20§§`
+\\ note ÷ le §§ à la fin permet un retour à la ligne et doit être entre double quote `§§`
+\\ réponse ÷
+function multiplication(a, b) {
+  return a + ' x ' + b + ' = ' + ( a * b ) + `§§`;
+}
+
+\\ cette fonction test_multiplication teste votre fonction multiplication et affiche un message dans la console si elle est correcte
+\\ n'en tenez pas compte, cela test uniquement votre code
+test_multiplication ();
+
+\\ 2 - Créez une fonction `calcul` qui ne prend aucun paramètre et qui ne retourne rien, voici l'ordre des instructions ÷
+\\ Cette fonction lit le contenu de l'input #nombre et stock cette valeur dans une variable `nombre`
+\\ créez maintenant une autre variable string vide ÷
+\\     var resultat = ``;
+\\ elle va contenir l'ensemble de la table de multiplication
+\\ Ajoutez maintenant une boucle `for` allant de i = 1 à 10
+\\ Dans cette boucle on met à jour le contenu de notre variable `resultat` avec le retour de la fonction multiplication pour chaque `i` avec `nombre`
+\\ enfin remplissez le textarea `#result` avec le contenu de votre variable `resultat`
+\\ réponse ÷
+function calcul() {
+  var nombre = $('#nombre').value;
+  var resultat = ``;
+  for( var i = 0 ; i <= 10 ; i++ ) {
+    resultat += multiplication( i, nombre );
+  }
+  $('#result').value = resultat;
+}
+
+\\ 3 - On va créer un event listener sur l'élément #nombre en écoutant l'evenement 'input' afin de lancer notre fontion calcul automatiquement
+\\ réponse ÷
+$('#nombre').on('input', calcul);
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP4 - jouer avec JavaScript (backup si ça marche pas)</a>
-  </li>
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP4 - jouer avec JavaScript (backup si ça marche pas)"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<label for=`nombre`>Table des<\label>
+<input id=`nombre`
+      type=`number`
+      value=`4`
+      placeholder=`Saisir un chiffre` \>
+<button onclick=`calcul()`>
+  test
+<\button><br>
+<textarea id=`result`
+          cols=`40`
+          rows=`16`
+          readonly=`readonly`>
+<\textarea>
+…………………………………………………………………………………………………………………………
+<script>
+  function test_multiplication () {
+    if( multiplication( 4 , 5 ) === `4 x 5 = 20§§` ) {
+      console.log(`Bien joué ta fonction à l'air de marcher`)
+    } else {
+      console.log(`Désolé, multiplication( 4 , 5 ) retourne `,multiplication( 4 , 5 ), `et devrait retourner '4 x 5 = 20§§'`);
+    }
+  }
+<\script>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Le but de ce TP est d'afficher une table de multiplication à partir d'un nombre passé en paramètre
+
+\\ 1 - Commencez par écrire une fonction `multiplication`
+\\ Elle prend deux paramètres et retourne une chaine (string)
+\\ tel que si j'appelle la fonction `multiplication( 4 , 5 )`
+\\ elle retourne la chaine `4 x 5 = 20§§`
+\\ note ÷ le §§ à la fin permet un retour à la ligne et doit être entre double quote `§§`
+\\ réponse ÷
+
+
+\\ cette fonction test_multiplication teste votre fonction multiplication et affiche un message dans la console si elle est correcte
+\\ n'en tenez pas compte, cela test uniquement votre code
+test_multiplication ();
+
+\\ 2 - Créez une fonction `calcul` qui ne prend aucun paramètre et qui ne retourne rien, voici l'ordre des instructions ÷
+\\ Cette fonction lit le contenu de l'input #nombre et stock cette valeur dans une variable `nombre`
+\\ créez maintenant une autre variable string vide ÷
+\\     var resultat = ``;
+\\ elle va contenir l'ensemble de la table de multiplication
+\\ Ajoutez maintenant une boucle `for` allant de i = 1 à 10
+\\ Dans cette boucle on met à jour le contenu de notre variable `resultat` avec le retour de la fonction multiplication pour chaque `i` avec `nombre`
+\\ enfin remplissez le textarea `#result` avec le contenu de votre variable `resultat`
+\\ réponse ÷
+
+
+\\ 3 - On va créer un event listener sur l'élément #nombre en écoutant l'evenement 'input' afin de lancer notre fontion calcul automatiquement
+\\ réponse ÷
+"
+        onclick="return openInCodepen(this);">
+        TP4 - jouer avec JavaScript (backup si ça marche pas)
+      </a>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP4 - jouer avec JavaScript (backup si ça marche pas) - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+<label for=`nombre`>Table des<\label>
+<input id=`nombre`
+      type=`number`
+      value=`4`
+      placeholder=`Saisir un chiffre` \>
+<button onclick=`calcul()`>
+  test
+<\button><br>
+<textarea id=`result`
+          cols=`40`
+          rows=`16`
+          readonly=`readonly`>
+<\textarea>
+…………………………………………………………………………………………………………………………
+<script>
+  function test_multiplication () {
+    if( multiplication( 4 , 5 ) === `4 x 5 = 20§§` ) {
+      console.log(`Bien joué ta fonction à l'air de marcher`)
+    } else {
+      console.log(`Désolé, multiplication( 4 , 5 ) retourne `,multiplication( 4 , 5 ), `et devrait retourner '4 x 5 = 20§§'`);
+    }
+  }
+<\script>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ Le but de ce TP est d'afficher une table de multiplication à partir d'un nombre passé en paramètre
+
+\\ 1 - Commencez par écrire une fonction `multiplication`
+\\ Elle prend deux paramètres et retourne une chaine (string)
+\\ tel que si j'appelle la fonction `multiplication( 4 , 5 )`
+\\ elle retourne la chaine `4 x 5 = 20§§`
+\\ note ÷ le §§ à la fin permet un retour à la ligne et doit être entre double quote `§§`
+\\ réponse ÷
+function multiplication(a, b) {
+  return a + ' x ' + b + ' = ' + ( a * b ) + `§§`;
+}
+
+\\ cette fonction test_multiplication teste votre fonction multiplication et affiche un message dans la console si elle est correcte
+\\ n'en tenez pas compte, cela test uniquement votre code
+test_multiplication ();
+
+\\ 2 - Créez une fonction `calcul` qui ne prend aucun paramètre et qui ne retourne rien, voici l'ordre des instructions ÷
+\\ Cette fonction lit le contenu de l'input #nombre et stock cette valeur dans une variable `nombre`
+\\ créez maintenant une autre variable string vide ÷
+\\     var resultat = ``;
+\\ elle va contenir l'ensemble de la table de multiplication
+\\ Ajoutez maintenant une boucle `for` allant de i = 1 à 10
+\\ Dans cette boucle on met à jour le contenu de notre variable `resultat` avec le retour de la fonction multiplication pour chaque `i` avec `nombre`
+\\ enfin remplissez le textarea `#result` avec le contenu de votre variable `resultat`
+\\ réponse ÷
+function calcul() {
+  var nombre = $('#nombre').value;
+  var resultat = ``;
+  for( var i = 0 ; i <= 10 ; i++ ) {
+    resultat += multiplication( i, nombre );
+  }
+  $('#result').value = resultat;
+}
+
+\\ 3 - On va créer un event listener sur l'élément #nombre en écoutant l'evenement 'input' afin de lancer notre fontion calcul automatiquement
+\\ réponse ÷
+$('#nombre').on('input', calcul);
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP5 - jouer avec “this“</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js6-tp-5?file=script.js&devtoolsheight=70">
+        <span class="cours_label">Cours </span>TP5 - jouer avec “this“</a>
+           (
+          <a href="##"
+            data-pen-type="js"
+            data-show-prompt=""
+            data-title="TP5 - jouer avec “this“ - Corrigé"
+            data-description=""
+            data-html="<!-- Vous ne devez pas changer le HTML -->
+HTML ÷ <input id=`html_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br>
+Contenu ÷ <input id=`contenu_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br><br>
+<button contenu=`premiere valeur`>
+  mon bouton 1
+<\button><br>
+<button contenu=`autre valeur`>
+  mon bouton 2
+<\button><br>
+<button contenu=`valeur quelconque`>
+  mon bouton 3
+<\button><br>
+<button contenu=`encore une petite`>
+  mon bouton 4
+<\button><br>
+<button contenu=`un contenu`>
+  mon bouton 5
+<\button><br>
+<button contenu=`et le final`>
+  mon bouton 6
+<\button><br>
+"
+            data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - faire une fonction voir_element qui affiche l'element courant `this` dans la console
+\\ réponse ÷
+function voir_element() {
+  console.log(this);
+}
+
+\\ 2 - associer cette fonction à vos boutons
+\\ réponse ÷
+$('button').on('click', voir_element);
+
+\\ 3 - ecrivez une autre fonction qui utilise `this` qui sera aussi appelée au clic sur l'un des bouton
+\\ afficher le contenu HTML du bouton cliqué dans le champ `html_clique`
+\\ pensez à associer votre fonction au clic sur les boutons pour pouvoir la tester
+\\ réponse ÷
+function bouton_clique() {
+  $('#html_clique').value = this.innerHTML;
+  \\ question suivante ÷
+  $('#contenu_clique').value = this.getAttribute('contenu');
+}
+$('button').on('click', bouton_clique);
+
+\\ 4 - modifier votre fonction pour que maintenant elle remplisse aussi le champ `contenu_clique`
+\\ avec l'attribut du bouton qui a été cliqué
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP5 - jouer avec “this“ (backup si ça marche pas)</a>
-  </li>
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP5 - jouer avec “this“ (backup si ça marche pas)"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+HTML ÷ <input id=`html_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br>
+Contenu ÷ <input id=`contenu_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br><br>
+<button contenu=`premiere valeur`>
+  mon bouton 1
+<\button><br>
+<button contenu=`autre valeur`>
+  mon bouton 2
+<\button><br>
+<button contenu=`valeur quelconque`>
+  mon bouton 3
+<\button><br>
+<button contenu=`encore une petite`>
+  mon bouton 4
+<\button><br>
+<button contenu=`un contenu`>
+  mon bouton 5
+<\button><br>
+<button contenu=`et le final`>
+  mon bouton 6
+<\button><br>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - faire une fonction voir_element qui affiche l'element courant `this` dans la console
+\\ réponse ÷
+
+
+\\ 2 - associer cette fonction à vos boutons
+\\ réponse ÷
+
+
+\\ 3 - ecrivez une autre fonction qui utilise `this` qui sera aussi appelée au clic sur l'un des bouton
+\\ afficher le contenu HTML du bouton cliqué dans le champ `html_clique`
+\\ pensez à associer votre fonction au clic sur les boutons pour pouvoir la tester
+\\ réponse ÷
+
+
+\\ 4 - modifier votre fonction pour que maintenant elle remplisse aussi le champ `contenu_clique`
+\\ avec l'attribut du bouton qui a été cliqué
+"
+        onclick="return openInCodepen(this);">
+        TP5 - jouer avec “this“ (backup si ça marche pas)
+      </a>
+             (
+      <a href="##"
+        data-pen-type="js"
+        data-show-prompt=""
+        data-title="TP5 - jouer avec “this“ (backup si ça marche pas) - Corrigé"
+        data-description=""
+        data-html="<!-- Vous ne devez pas changer le HTML -->
+HTML ÷ <input id=`html_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br>
+Contenu ÷ <input id=`contenu_clique`
+      type=`text`
+      value=``
+      readonly=`readonly` \>
+<br><br>
+<button contenu=`premiere valeur`>
+  mon bouton 1
+<\button><br>
+<button contenu=`autre valeur`>
+  mon bouton 2
+<\button><br>
+<button contenu=`valeur quelconque`>
+  mon bouton 3
+<\button><br>
+<button contenu=`encore une petite`>
+  mon bouton 4
+<\button><br>
+<button contenu=`un contenu`>
+  mon bouton 5
+<\button><br>
+<button contenu=`et le final`>
+  mon bouton 6
+<\button><br>
+"
+        data-js="\* commencez par agrandir la zone d'éditeur javascript *\
+\* Vous ne devez écrire votre code qu'après les commentaires de réponse *\
+
+\\ 1 - faire une fonction voir_element qui affiche l'element courant `this` dans la console
+\\ réponse ÷
+function voir_element() {
+  console.log(this);
+}
+
+\\ 2 - associer cette fonction à vos boutons
+\\ réponse ÷
+$('button').on('click', voir_element);
+
+\\ 3 - ecrivez une autre fonction qui utilise `this` qui sera aussi appelée au clic sur l'un des bouton
+\\ afficher le contenu HTML du bouton cliqué dans le champ `html_clique`
+\\ pensez à associer votre fonction au clic sur les boutons pour pouvoir la tester
+\\ réponse ÷
+function bouton_clique() {
+  $('#html_clique').value = this.innerHTML;
+  \\ question suivante ÷
+  $('#contenu_clique').value = this.getAttribute('contenu');
+}
+$('button').on('click', bouton_clique);
+
+\\ 4 - modifier votre fonction pour que maintenant elle remplisse aussi le champ `contenu_clique`
+\\ avec l'attribut du bouton qui a été cliqué
+"
+        onclick="return openInCodepen(this);">
+        Corrigé
+      </a>)
+            </li>
   <li class="list-group-item tpnote">
       <span class="cours_label">Cours </span>Entrainement TP noté
   </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP Entraînement 1 - Créer une mini interface</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js7-tp-1?devtoolsheight=50&file=script.js&file=index.html">
+        <span class="cours_label">Cours </span>TP Entraînement 1 - Créer une mini interface</a>
+           (
+          <a href="##"
+            data-pen-type=""
+            data-show-prompt=""
+            data-title="TP Entraînement 1 - Créer une mini interface - Corrigé"
+            data-description=""
+            data-html=""
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP Entraînement 1 - Créer une mini interface (corrigé)</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js7-tp-1-corrige?devtoolsheight=50&file=index.html,script.js">
+        <span class="cours_label">Cours </span>TP Entraînement 1 - Créer une mini interface (corrigé)</a>
+           (
+          <a href="##"
+            data-pen-type=""
+            data-show-prompt=""
+            data-title="TP Entraînement 1 - Créer une mini interface (corrigé) - Corrigé"
+            data-description=""
+            data-html=""
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item cours">
-    <a href="#"><span class="cours_label">Cours </span>8 - TP Final</a>
-  </li>
+      <a target="_blank" href="cours/8 - TP final.key.pdf">
+        <span class="cours_label">Cours </span>8 - TP Final</a>
+                      </li>
   <li class="list-group-item tpnote">
-    <a href="#"><span class="cours_label">Cours </span>Énoncé du TP noté</a>
-  </li>
+      <a target="_blank" href="tp/enonce-tp-note.html">
+        <span class="cours_label">Cours </span>Énoncé du TP noté</a>
+                      </li>
   <li class="list-group-item tp">
-    <a href="#"><span class="cours_label">Cours </span>TP noté</a>
-  </li>
+      <a target="_blank" href="https://stackblitz.com/edit/js-tp-note?devtoolsheight=50&file=index.html&file=script.js">
+        <span class="cours_label">Cours </span>TP noté</a>
+           (
+          <a href="##"
+            data-pen-type=""
+            data-show-prompt=""
+            data-title="TP noté - Corrigé"
+            data-description=""
+            data-html=""
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
 </ul>
 
 <footer>
