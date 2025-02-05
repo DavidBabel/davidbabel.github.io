@@ -1,0 +1,156 @@
+body {
+  background-color: #fcfcfc;
+  padding-bottom: 300px;
+}
+h4.sub-title {
+  margin-bottom: 100px;
+}
+h4.margin-title {
+  margin-left: 25px;
+  margin-top: 40px;
+}
+.back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5000;
+  opacity: 0.3;
+}
+.back:hover {
+  opacity: 1;
+}
+.btn, footer a {
+  margin: 50px;
+}
+.list-group {
+  padding-bottom: 22px;
+}
+.list-group-item {
+  margin: 0 10% 0 10%;
+  padding-left: 8%;
+}
+.list-group-item:hover {
+  background-color: #fbfbfb;
+}
+.list-group-item.sem {
+  font-weight: bold;
+  padding-left: 5%;
+}
+.list-group-item.cours,
+.list-group-item.tpnote {
+  font-weight: bold;
+  padding-left: 9%;
+}
+.list-group-item .cours_label {
+  display: none;
+}
+.list-group-item.cours .cours_label {
+  display: inline;
+}
+.list-group-item.tp {
+  font-weight: bold;
+  padding-left: 12%;
+}
+a:hover {
+  text-decoration: underline;
+}
+a[href="#"] {
+  color: grey;
+}
+a[href="#"]:hover {
+  text-decoration: none;
+  cursor: not-allowed;
+}
+a[href="#"]:after {
+  margin-left: 10px;
+  display: inline;
+}
+li:hover a[href="#"]:after {
+  content: ' bientôt ...';
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/**/
+.eleves-tous {
+  color: black;
+}
+.eleves-1 {
+  color: orangered;
+}
+.eleves-2 {
+  color: dodgerblue;
+}
+.eleves-3 {
+  color: forestgreen;
+}
+
+#hidden-clicks {
+  display: none;
+}
+
+.badge {
+  float: right;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .badge {
+    display: none;
+  }
+  h2.main-title {
+    font-size: 36px;
+    margin-top: 70px;
+  }
+  h4.sub-title {
+    margin-bottom: 40px;
+  }
+  .back {
+    margin: 2px;
+  }
+  .list-group-item.sem {
+    padding-left: 4%;
+  }
+  .list-group-item.cours {
+    padding-left: 7%;
+  }
+  .list-group-item.tp {
+    padding-left: 8%;
+  }
+  footer {
+    height: 80px;
+    line-height: 40px;
+  }
+}
+
+/* Mise en forme TP notés */
+
+.instructions {
+  font-style: italic;
+  width: 530px;
+  margin: 30px auto 5px;
+  text-align: left;
+}
+.ennonce {
+  text-align: left;
+  padding: 20px 50px;
+}
+
+.astuce {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.img-demo {
+  max-width: 60%;
+  max-width: 400px;
+  margin: 15px 80px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
