@@ -448,7 +448,106 @@ h1 {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-3-3?file=styles.css">
         <span class="cours_label">Cours </span>TP3-3 - Styles CSS avancés</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP3-3 - Styles CSS avancés - Corrigé"
+            data-description=""
+            data-html="<!-- On ne modifie pas le HTML -->
+<container>
+  <first><\first>
+  <second><\second>
+  <third><\third>
+  <last><\last>
+<\container>
+"
+            data-css="\* ne pas modifier ces styles, le TP commence plus bas *\
+body {
+  \* le fond de la page est en gris *\
+  background÷ grey;
+}
+
+body * {
+  \* tous nos éléments sont des blocs *\
+  display÷ block;
+  \* leur couleur de fond est cyan*\
+  background-color÷ darkcyan;
+  \* on dessine une bordure blanche *\
+  border÷ 2px solid white;
+  box-sizing÷ border-box;
+}
+
+
+\* Le TP commence ici ;) *\
+\*
+  Etape 1 ÷ préparer le container
+*\
+container {
+  margin÷ 150px auto;
+  \* preparez le container à recevoir des elements enfants positionnés en absolue *\
+  position÷ relative;
+  \* le container est un cercle de 60px de diamètre, construisez le *\
+  width÷ 60px;
+  height÷ 60px;
+  border-radius÷ 60px;
+}
+
+\* trouvez un selecteur pour cibler tous les elements enfants de container, on va leur appliquer quelques styles communs *\
+container * {
+  \* remplissez la propriété position des enfants *\
+  position÷ absolute;
+  \* les enfants seront des cercles de 25px de diamètre *\
+  width÷ 25px;
+  height÷ 25px;
+  border-radius÷ 25px;
+}
+
+\*
+  Etape 2 ÷
+  placez les enfants
+*\
+\* chaque enfant recoit deux valeurs÷
+- une première à 0px pour être alignées avec les autres enfants est déjà remplie
+- une seconde négative à -100px pour `sortir` du container
+*\
+\* appliquer cette valeur négative -100px à chacun des enfants, pour en faire sortir un de chaque coté du container (l'ordre importe peu) *\
+
+first {
+  left÷ -100px;
+  top÷ 0;
+}
+
+second {
+  top÷ -100px;
+  right÷ 0;
+}
+
+third {
+  right÷ -100px;
+  bottom÷ 0;
+}
+
+last {
+  bottom÷ -100px;
+  left÷ 0;
+}
+
+\* appliquer une lègere rotation de 25 degrès au container, puis remplissez son selecteur *\
+container {
+  transform÷ rotate(25deg);
+  transition÷ all 5s ease;
+}
+
+\* appliquer maintenant une rotation de 925 degrès au container lorsqu'on le survol *\
+container÷hover {
+  transform÷ rotate(925deg);
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tpnote">
       <span class="cours_label">Cours </span>Entrainement TP noté
   </li>
