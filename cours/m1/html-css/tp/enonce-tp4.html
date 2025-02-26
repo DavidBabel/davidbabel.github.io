@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Sup De Web - Supports de cours</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://designmodo.github.io/Flat-UI/dist/css/flat-ui.css">
+  <link rel="stylesheet" href="https://davidbabel.github.io/cours/styles.css">
+</head>
+
+
+
+<body>
+
+
+<a href="../index.html" class="btn btn-lg btn-primary back">Retour</a>
+
+
+<div class="ennonce">
+  <h2 class="text-center">TP noté : Fabriquer un android en pur HTML CSS</h2>
+  <p class="instructions">
+    Durée: 2h30+
+    <br> Cours et TP + corrigés autorisés :
+    <a target="_blank" href="https://davidbabel.github.io/">https://davidbabel.github.io/</a>
+    <br> Internet autorisé, documentation etc.
+    <br> Réseaux sociaux et chats
+    <u>interdits</u>
+  </p>
+
+  <p class="text-center">
+    <img src="./tp4-android.png" alt="Android cassé ?">
+  </p>
+
+  <h3>Rendu</h3>
+
+  <p>Le lien du
+    Le TP doit être déposé dans la dropbox disponible sur <a target="_blank" href="https://davidbabel.github.io/cours/m1/html-css/index.html">la page précédente</a>.<br>
+    Vous pouvez le télécharger :<br>
+    <img class="img-demo" src="./tp4-rendu.png" alt="">
+    <img class="img-demo" src="./tp4-rendu2.png" alt="">
+    <br> Merci d'utiliser votre adresse d'étudiant (ou une adresse qui contient votre nom)</p>
+
+  <p>N'hésitez pas à poser des questions, je ne vous donnerez pas la réponse mais je vous direz vos erreurs.</p>
+
+  <h3>Ennoncé</h3>
+
+  <p>
+    <b>Il est fortement recommandé de lire cet énnoncé et les astuces intégralement avant de vous lancer</b>
+  </p>
+  <h4>Instructions:</h4>
+  <p>- Le code HTML ne doit pas être modifié, vous devez uniquement le décommenter au fur à mesure de votre avancement.
+    <br> - Votre code CSS doit être le plus optimisé et factorisé possible (comprendre qu'il faut écrire le moins possible de
+    fois la même chose), regrouppez donc les valeurs communes dans une seule et meme règle.
+    <br> - Vous ne devez utiliser que les selecteurs vus en cours
+    <br>
+    <span class="astuce">Attention :</span> Si vous faites une erreur dans votre CSS, toute la suite du code ne seras pas interprétée</p>
+  <h4>Objectifs:</h4>
+  <p><b>1 -</b> Reproduire l'android tel qu'apparait le modèle quand vous survolez le bouton "Tester son Android", le votre doit être
+    vert:
+    <b>#a5ca39</b>.
+    <br> Inspirez vous de ce modèle pour la taille des éléments et des arrondis. Toutes les valeurs sont des multiples de 5 ou
+    de 10 (sauf les oreilles) et sont exprimés en pixels.
+    <br> Il est recommandé de construire d'abord la tête, puis le corps, et de placer le corps correctement (voir astuces 2 et
+    3).
+    <br> Vous pourrez ensuite placer un à un les éléments restants plus facilement.<br>
+    <span class="astuce">astuce 1:</span> utiliser la propriété CSS <code>border: 1px solid red;</code> pour visualiser plus facilement la forme d'un objet
+    pendant sa construction (enlevez la ensuite quand vous avez fini).
+    <br>
+    <span class="astuce">Astuce 2:</span> La tête est un cercle entier, le corps remonte dans la tête en utilisant une valeur négative de margin,
+    masquant ainsi une partie de la tête.
+    <br>
+    <span class="astuce">astuce 3:</span> Vous devez utiliser une bordure blanche de 10px pour le corps afin de marquer la séparation avec la
+    tête.
+    <br>
+    <span class="astuce">astuce 4:</span> Révisez bien les positions <code>absolute</code> et <code>relative</code>.
+    Mis à part la tête et le corps, le reste des éléments est positionné en position <b>absolue</b>.
+    Si vous oubliez de bien définir ces valeurs, nous ne pourrez pas finir le TP.
+    <br>
+    <span class="astuce">astuce 5:</span> Les oreilles ont une inclinaison de 25 degrès. Seules les oreilles auront des valeurs qui ne seront pas des multiples de 5 ou 10.
+    <br>
+    <span class="astuce">astuce 6:</span> Utiliser les boutons "Tester son android" et "Voir les notes" pour afficher des aides visuelles.
+    <br>
+  </p>
+
+  <p><b>2 -</b> Changer la couleur de l'android pour que lors de son survol la totalité de son corps devienne plus foncé avec ce vert:
+    <b>#96bb2a</b> (attention aux règles de priorités).</p>
+
+  <p><b>3 -</b> Lors du survol de la tête, l'android pivote cette ci de 10 degrès sur la droite.</p>
+
+  <p><b>4 -</b> Lors du clic sur le corps de l'android, celui ci écarte les DEUX bras de 25 degrès.<br>
+    <span class="astuce">astuce 7:</span> Pour le mouvement des bras, renseignez vous sur les valeurs textes de la propriété CSS "transform origin".</p>
+  <br>
+  </p>
+
+  <p>Le StackBlitz du TP est disponible <a target="_blank" href="https://davidbabel.github.io/cours/m1/html-css/index.html">sur la page précédente</a>.
+  </p>
+
+  <p>
+    <b>Bon courage</b>
+  </p>
+</div>
+
+<footer>
+  -
+  <a target="_blank" href="https://www.linkedin.com/in/david-babel">David Babel </a> -
+  <a href="mailto:babel.david@gmail.com">Contact</a> -
+  <a>2023/2024</a> -
+</footer>
+<div id="hidden-clicks"></div>
+<script src="https://davidbabel.github.io/cours/script.js"></script>
+</body>
+</html>
