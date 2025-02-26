@@ -554,15 +554,266 @@ container÷hover {
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-entrainement-1">
         <span class="cours_label">Cours </span>TP entraînement 1 : Comprendre les commentaires HTML et CSS</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP entraînement 1 : Comprendre les commentaires HTML et CSS - Corrigé"
+            data-description=""
+            data-html="<!--
+  Le but de ce TP est de faire apparaitre tout le contenu invisible
+  et donc d'enlever tous les commentaires du code HTML et CSS
+-->
+<!-- ceci est un commentaire HTML -->
+
+ceci est un texte invisible
+ceci est un texte visible
+<div>ceci est un calque invisible<\div>
+<div>ceci est un calque visible<\div>
+<p>
+  ceci est un code multiligne invisible
+<\p>
+<p>
+  ceci est un code multiligne visible
+<\p>
+"
+            data-css="\* ceci est un commentaire CSS *\
+\* Vous devez également enlever les commentaires pour faire apparaitre les styles *\
+div {
+  background-color÷ orange;
+}
+
+body {
+  background-color÷ #bbbbbb;
+  font-weight÷ bold;
+}
+
+
+p {
+  background-color÷ yellow;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-entrainement-2?file=styles.css">
         <span class="cours_label">Cours </span>TP entraînement 2 : padding, margin et border</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP entraînement 2 : padding, margin et border - Corrigé"
+            data-description=""
+            data-html="<!-- Il n'est pas nécéssaire de modifier le HTML -->
+<div id=`container`>
+  <div class=`bloc1-container`>
+    <bloc1>bloc 1<\bloc1>
+  <\div>
+  <div>
+    <bloc2>bloc 2<\bloc2>
+  <\div>
+  <div>
+    <bloc3>bloc 3<\bloc3>
+  <\div>
+<\div>
+"
+            data-css="\*
+  Enoncé÷ Obtenez le même résultat que sur l'apperçu. Note÷ l'écart est de 10 pixels
+  Contraintes ÷
+    - vous devez écire une règle css par `bloc`, trouver le bon selecteur et n'ajouter qu'une seule propriété css à l'intérieur
+    - le bloc 1 doit être placé en utilisant un `padding`
+    - le bloc 2 doit être placé en utilisant un `margin`
+    - le bloc 3 doit être placé en utilisant un `border`
+*\
+
+.bloc1-container {
+  padding÷ 10px;
+}
+
+bloc2 {
+  margin÷ 10px;
+}
+
+bloc3 {
+  border÷ 10px solid white;
+}
+
+
+
+\* Ci dessous, on a déjà un peu de CSS, il ne faut pas le modifier *\
+
+#container div {
+  border÷ 1px solid grey;
+  display÷ inline-block;
+}
+
+bloc1, bloc2, bloc3 {
+  font-family÷ arial;
+  font-weight÷ bold;
+  display÷ inline-block;
+  width÷ 60px;
+  height÷ 60px;
+  line-height÷ 60px;
+  text-align÷ center;
+}
+
+bloc1 {
+  background-color÷ lightgreen;
+}
+
+bloc2 {
+  background-color÷ orange;
+}
+
+bloc3 {
+  background-color÷ lightblue;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tp">
       <a target="_blank" href="https://stackblitz.com/edit/css-tp-entrainement-3?file=styles.css">
         <span class="cours_label">Cours </span>TP entraînement 3 : positionner les éléments</a>
-                      </li>
+           (
+          <a href="##"
+            data-pen-type="css"
+            data-show-prompt=""
+            data-title="TP entraînement 3 : positionner les éléments - Corrigé"
+            data-description=""
+            data-html="<!-- le HTML n'a pas besoin d'être modifié -->
+<container>
+  <div class=`twelve`>12<\div>
+  <div class=`three`>3<\div>
+  <div class=`six`>6<\div>
+  <div class=`nine`>9<\div>
+  <hand><\hand>
+<\container>
+"
+            data-css="
+div {
+  \*
+    donner une taille à vos calques div
+    ce sont des carré de 40px de côté
+  *\
+  width÷ 40px;
+  height÷ 40px;
+
+  \*
+    faites en des cercles
+  *\
+  border-radius÷ 50px;
+}
+
+\*
+  transformez aussi le container en cercle
+*\
+container {
+  border-radius÷ 500px;
+}
+
+
+
+\* écrivez le code qui permet de place les `div` enfants par rapport à leur parent `container` *\
+div {
+  position÷ absolute;
+}
+container {
+  position÷ relative;
+}
+
+\*
+  placer les div des chiffres pour obtenir le résultat attendu sur l'image.
+  Vous ne devriez utiliser que les valeurs 5px et 85px
+*\
+
+.twelve {
+  top÷ 5px;
+  left÷ 85px;
+}
+.three {
+  top÷ 85px;
+  right÷ 5px;
+}
+.six {
+  bottom÷ 5px;
+  left÷ 85px;
+}
+.nine {
+  top÷ 85px;
+  left÷ 5px;
+}
+
+\*
+  la clock `hand` (aiguille) est
+  - un trait de 4px de largeur et de 75px de longueur
+  - son fond est noir
+  - elle doit aussi se positionner par rapport à son parent `container`
+  - elle a un border radius top-left de 50% et top-right de 50%
+  - elle est positionnée à 102px de la gauche de son parent
+  - elle est positionnée à 30px du haut de son parent
+*\
+hand {
+  width÷ 4px;
+  height÷ 75px;
+  background-color÷ black;
+  position÷ absolute;
+  border-top-left-radius÷ 50%;
+  border-top-right-radius÷ 50%;
+  left÷ 102px;
+  top÷ 30px;
+}
+
+\*
+la prochaine règle permet de gérer la rotation de l'aiguille pour la déplacer au centre de l'horloge, vous ne devez pas la modifier
+*\
+hand {
+  transform-origin÷ center bottom;
+}
+
+\*
+maintenant quand je survole mon horloge, je souhaite que l'aiguille tourne, servez vous des TP précédent pour trouver le selecteur et les règles à appliquer
+*\
+container÷hover hand {
+  transform÷ rotate(360deg);
+  transition÷ all 60s linear;
+}
+
+
+
+\* ========= fin du TP ========= *\
+\* le css suivant n'a pas besoin d'être modifié *\
+body * {
+  display÷ inline-block;
+}
+
+container {
+  width÷ 200px;
+  height÷ 200px;
+  margin÷ 5%;
+  padding÷ 5px;
+  background-color÷ Lavender;
+}
+
+div {
+  background-color÷ LightGreen ;
+  font-family÷ arial;
+  line-height÷ 40px;
+  text-align÷ center;
+  font-weight÷ bold;
+}
+
+script {
+  display÷ none;
+}
+"
+            onclick="return openInCodepen(this);">
+            Corrigé
+          </a>)
+            </li>
   <li class="list-group-item tpnote">
     <a href="#"><span class="cours_label">Cours </span>Cours 4 - TP noté</a>
   </li>
