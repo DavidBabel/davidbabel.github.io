@@ -19,7 +19,8 @@ h4.margin-title {
 .back:hover {
   opacity: 1;
 }
-.btn, footer a {
+.btn,
+footer a {
   margin: 50px;
 }
 .list-group {
@@ -66,7 +67,7 @@ a[href="#"]:after {
   display: inline;
 }
 li:hover a[href="#"]:after {
-  content: ' bientôt ...';
+  content: " bientôt ...";
 }
 footer {
   position: fixed;
@@ -153,4 +154,3 @@ footer {
   border: 2px solid grey;
   border-radius: 10px;
 }
-
